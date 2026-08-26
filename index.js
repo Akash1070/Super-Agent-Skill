@@ -53,7 +53,7 @@ const ALL_TOOLS = [
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "8.0.0",
+    version: "9.0.0",
   },
   {
     capabilities: {
@@ -104,7 +104,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v8.0 (45 Tools / 19 Modules) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v9.0 (47 Tools / 19 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();

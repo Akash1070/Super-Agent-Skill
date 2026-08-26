@@ -24,70 +24,64 @@
       "timestamp": "2026-08-26T13:28:00Z"
     },
     {
-      "rule": "Marketing Scout [MADEVAL/MindFluence]: High-Converting Copywriting & Psychological Influencer Marketing Blueprint",
-      "url": "https://github.com/MADEVAL/MindFluence",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
+      "rule": "SEO/GEO Scout [zubair-trabzada/geo-seo-claude]: Claude AI Generative Engine Optimization Framework",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude",
+      "category": "seo_geo_scout",
+      "timestamp": "2026-08-26T14:26:00Z"
     },
     {
-      "rule": "Marketing Scout [Varnan-Tech/position-me]: Brand Positioning & Product Category Creation Framework",
-      "url": "https://github.com/Varnan-Tech/position-me",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
+      "rule": "SEO/GEO Scout [amplifying-ai/awesome-generative-engine-optimization]: Curated GEO & AEO Strategies for LLMs",
+      "url": "https://github.com/amplifying-ai/awesome-generative-engine-optimization",
+      "category": "seo_geo_scout",
+      "timestamp": "2026-08-26T14:26:00Z"
     },
     {
-      "rule": "Marketing Scout [Archibaldys/ai-copywriting-prompts]: State-of-the-Art AI Copywriting Prompt Blueprints",
-      "url": "https://github.com/Archibaldys/ai-copywriting-prompts",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
+      "rule": "SEO/GEO Scout [JustinBeckwith/linkinator]: Automated Broken Link Inspection Engine",
+      "url": "https://github.com/JustinBeckwith/linkinator",
+      "category": "seo_geo_scout",
+      "timestamp": "2026-08-26T14:26:00Z"
     },
     {
-      "rule": "Marketing Scout [coreyhaines31/marketingskills]: Core Marketing Skills for SaaS & Web Products",
-      "url": "https://github.com/coreyhaines31/marketingskills",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
+      "rule": "SEO/GEO Scout [StanGirard/seo-audits-toolkit]: Comprehensive SEO & Page Speed Audit Toolkit",
+      "url": "https://github.com/StanGirard/seo-audits-toolkit",
+      "category": "seo_geo_scout",
+      "timestamp": "2026-08-26T14:26:00Z"
     },
     {
-      "rule": "Marketing Scout [alexsmedile/hormozi-skills]: Alex Hormozi $100M Grand Slam Offer & Value Equation Framework",
-      "url": "https://github.com/alexsmedile/hormozi-skills",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
+      "rule": "SEO/GEO Scout [flaqai/backlink_skills]: Automated Backlink Strategy & Technical Outreach Blueprint Generator",
+      "url": "https://github.com/flaqai/backlink_skills",
+      "category": "seo_geo_scout",
+      "timestamp": "2026-08-26T14:26:00Z"
     },
     {
-      "rule": "Marketing Scout [adkit/ads-skills]: Direct-Response Ad Copywriting & Campaign Angle Generator",
-      "url": "https://github.com/adkit/ads-skills",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
+      "rule": "SEO/GEO Scout [akvise/trends-checker]: Google Trends & Keyword Cluster Analysis Engine",
+      "url": "https://github.com/akvise/trends-checker",
+      "category": "seo_geo_scout",
+      "timestamp": "2026-08-26T14:26:00Z"
     },
     {
-      "rule": "Marketing Scout [twominutereports/marketing-skills]: Data-Driven Marketing Metrics & Growth Analytics",
-      "url": "https://github.com/twominutereports/marketing-skills",
-      "category": "marketing_scout",
-      "timestamp": "2026-08-26T14:14:00Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [nuxt/fonts] (599★): Plug-and-play web font optimization and configuration for Nuxt apps.",
-      "url": "https://github.com/nuxt/fonts",
+      "rule": "Auto-Scouted Production Tool [krille-chan/fluffychat] (3076★): The cutest instant messenger in the [matrix]",
+      "url": "https://github.com/krille-chan/fluffychat",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:45:26.891Z"
+      "timestamp": "2026-08-26T08:57:55.199Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [unjs/fontaine] (1983★): Automatic font fallback based on font metrics",
-      "url": "https://github.com/unjs/fontaine",
+      "rule": "Auto-Scouted Production Tool [jiangtian616/JHenTai] (5451★): A cross-platform manga app made for e-hentai & exhentai by Flutter",
+      "url": "https://github.com/jiangtian616/JHenTai",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:45:26.893Z"
+      "timestamp": "2026-08-26T08:57:55.200Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [openreplay/openreplay] (12576★): Session replay, cobrowsing and product analytics you can self-host. Best for reproducing issues and iterating on your product.",
-      "url": "https://github.com/openreplay/openreplay",
+      "rule": "Auto-Scouted Production Tool [flame-engine/flame] (10733★): A Flutter based game engine.",
+      "url": "https://github.com/flame-engine/flame",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:45:26.893Z"
+      "timestamp": "2026-08-26T08:57:55.200Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [basics/nuxt-booster] (865★): nuxt-booster will help you to improve the lighthouse performance score (100/100) of your website. 🚀",
-      "url": "https://github.com/basics/nuxt-booster",
+      "rule": "Auto-Scouted Production Tool [RunanywhereAI/runanywhere-sdks] (10281★): Production ready toolkit to run AI locally",
+      "url": "https://github.com/RunanywhereAI/runanywhere-sdks",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:45:26.893Z"
+      "timestamp": "2026-08-26T08:57:55.200Z"
     }
   ]
 }

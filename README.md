@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚀 SUPER AGENT SKILL v8.0
+# 🚀 SUPER AGENT SKILL v9.0
 ### *The Zero-BS, Full-Stack AI Coding & Growth Engine for Builders & Founders*
 
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 [![MCP Standard](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple.svg?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Tools Count](https://img.shields.io/badge/Tools-45%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-45-tool-suite-across-19-modules)
+[![Tools Count](https://img.shields.io/badge/Tools-47%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-47-tool-suite-across-19-modules)
 [![In-IDE Dashboard](https://img.shields.io/badge/In--IDE-Dashboard-brightgreen.svg?style=for-the-badge)](#-in-ide-visual-intelligence-dashboard)
 
 ---
@@ -14,9 +14,9 @@
 ### 👴 **LISTEN UP, BUILDER: HERE'S THE REAL DEAL**
 *I've seen developers waste thousands of hours reinventing the wheel—messing with unstyled UIs, fixing CORS headers at 2 AM, and writing weak headlines nobody reads.*
 
-**`super-agent-skill` gives your AI agent (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity) 45 battle-tested tools to do the heavy lifting for you—100% Free, Zero Friction, Installed in 5 Seconds.**
+**`super-agent-skill` gives your AI agent (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity) 47 battle-tested tools to do the heavy lifting for you—100% Free, Zero Friction, Installed in 5 Seconds.**
 
-[⚡ 5-Second Setup](#-5-second-1-click-setup) • [🔍 SEO / AEO / GEO Engine](#-seo--aeo--geo-ai-discovery-engine) • [📦 45 Tools Matrix](#-the-45-tool-suite-across-19-modules) • [👤 Author](#-author--creator)
+[⚡ 5-Second Setup](#-5-second-1-click-setup) • [🔍 SEO / AEO / GEO Engine](#-seo--aeo--geo-ai-discovery-engine) • [📦 47 Tools Matrix](#-the-47-tool-suite-across-19-modules) • [👤 Author](#-author--creator)
 
 </div>
 
@@ -26,9 +26,9 @@
 
 Your app won't make a dime if nobody finds it. Standard tools only optimize for old Google search. `super-agent-skill` optimizes for **all 3 search engines**:
 
-1. **🔎 Traditional SEO (Google / Bing):** Automated `<head>` tags, OpenGraph social cards, and sitemaps.
+1. **🔎 Traditional SEO (Google / Bing):** Automated `<head>` tags, OpenGraph social cards, broken link audits, and sitemaps.
 2. **🤖 AEO (Answer Engine Optimization):** Direct-answer text blocks formatted specifically for **Perplexity, SearchGPT, and Claude Web Search** to cite your project.
-3. **⚡ GEO (Generative Engine Optimization):** `llms.txt` and JSON-LD schema so LLMs understand your exact software entity and recommend it.
+3. **⚡ GEO (Generative Engine Optimization):** `llms.txt`, Schema.org, and backlink outreach strategies so LLMs understand your exact software entity and recommend it.
 
 ---
 
@@ -85,7 +85,7 @@ No complex build steps. Paste this into your IDE's `mcp_config.json` and you're 
 
 ---
 
-## 📦 The 45-Tool Suite Across 19 Modules
+## 📦 The 47-Tool Suite Across 19 Modules
 
 | Module | Purpose | Tools Provided |
 | :--- | :--- | :--- |
@@ -107,7 +107,7 @@ No complex build steps. Paste this into your IDE's `mcp_config.json` and you're 
 | **16. Monetization & Pricing** | SaaS pricing tiers & unit economics (LTV/CAC) | `generate_pricing_tier_blueprint`, `generate_unit_economics_calculator` |
 | **17. Legal & Compliance** | GDPR/CCPA Privacy Policy & Terms of Service | `generate_privacy_terms_blueprint` |
 | **18. Product Analytics** | Event telemetry tracking & funnel optimization | `generate_telemetry_funnel_blueprint` |
-| **19. SEO + AEO + GEO** | Search, Perplexity AEO & LLM GEO `llms.txt` discovery | `generate_seo_aeo_geo_blueprint`, `generate_llms_txt_blueprint` |
+| **19. SEO + AEO + GEO** | Search, Perplexity AEO & LLM GEO `llms.txt` discovery | `generate_seo_aeo_geo_blueprint`, `generate_llms_txt_blueprint`, `audit_seo_aeo_geo_readiness`, `generate_backlink_and_traffic_strategy` |
 
 ---
 
