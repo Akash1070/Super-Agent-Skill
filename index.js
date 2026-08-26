@@ -53,7 +53,7 @@ const ALL_TOOLS = [
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "9.0.0",
+    version: "10.0.0",
   },
   {
     capabilities: {
@@ -72,6 +72,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   try {
+    if (MEMORY_TOOLS.some((t) => t.name === name)) return handleMemoryTool(name, args);
     if (SEO_AEO_GEO_TOOLS.some((t) => t.name === name)) return handleSeoAeoGeoTool(name, args);
     if (MONETIZATION_TOOLS.some((t) => t.name === name)) return handleMonetizationTool(name, args);
     if (LEGAL_TOOLS.some((t) => t.name === name)) return handleLegalTool(name, args);
@@ -84,7 +85,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     if (TESTING_TOOLS.some((t) => t.name === name)) return handleTestingTool(name, args);
     if (API_CONTRACTS_TOOLS.some((t) => t.name === name)) return handleApiContractsTool(name, args);
     if (CICD_TOOLS.some((t) => t.name === name)) return handleCicdTool(name, args);
-    if (MEMORY_TOOLS.some((t) => t.name === name)) return handleMemoryTool(name, args);
     if (ARCHITECTURE_AUTH_TOOLS.some((t) => t.name === name)) return handleArchitectureAuthTool(name, args);
     if (PROMPT_ENGINEERING_TOOLS.some((t) => t.name === name)) return handlePromptEngineeringTool(name, args);
     if (UI_UX_TOOLS.some((t) => t.name === name)) return handleUIUXTool(name, args);
@@ -104,7 +104,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v9.0 (47 Tools / 19 Modules) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v10.0 (48 Tools / 19 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();

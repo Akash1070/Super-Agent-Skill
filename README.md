@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚀 SUPER AGENT SKILL v9.0
+# 🚀 SUPER AGENT SKILL v10.0
 ### *The Zero-BS, Full-Stack AI Coding & Growth Engine for Builders & Founders*
 
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 [![MCP Standard](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple.svg?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Tools Count](https://img.shields.io/badge/Tools-47%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-47-tool-suite-across-19-modules)
+[![Tools Count](https://img.shields.io/badge/Tools-48%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-48-tool-suite-across-19-modules)
 [![In-IDE Dashboard](https://img.shields.io/badge/In--IDE-Dashboard-brightgreen.svg?style=for-the-badge)](#-in-ide-visual-intelligence-dashboard)
 
 ---
@@ -14,21 +14,22 @@
 ### 👴 **LISTEN UP, BUILDER: HERE'S THE REAL DEAL**
 *I've seen developers waste thousands of hours reinventing the wheel—messing with unstyled UIs, fixing CORS headers at 2 AM, and writing weak headlines nobody reads.*
 
-**`super-agent-skill` gives your AI agent (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity) 47 battle-tested tools to do the heavy lifting for you—100% Free, Zero Friction, Installed in 5 Seconds.**
+**`super-agent-skill` gives your AI agent (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity) 48 battle-tested tools to do the heavy lifting for you—100% Free, Zero Friction, Installed in 5 Seconds.**
 
-[⚡ 5-Second Setup](#-5-second-1-click-setup) • [🔍 SEO / AEO / GEO Engine](#-seo--aeo--geo-ai-discovery-engine) • [📦 47 Tools Matrix](#-the-47-tool-suite-across-19-modules) • [👤 Author](#-author--creator)
+[⚡ 5-Second Setup](#-5-second-1-click-setup) • [🧠 Gold Memory Loop](#-gold-level-agent-learning-loop-memory) • [🔍 SEO / AEO / GEO Engine](#-seo--aeo--geo-ai-discovery-engine) • [📦 48 Tools Matrix](#-the-48-tool-suite-across-19-modules) • [👤 Author](#-author--creator)
 
 </div>
 
 ---
 
-## 🔍 SEO + AEO + GEO: Get Discovered Everywhere
+## 🧠 Gold-Level Agent Learning Loop Memory
 
-Your app won't make a dime if nobody finds it. Standard tools only optimize for old Google search. `super-agent-skill` optimizes for **all 3 search engines**:
+Standard AI agents lose their memory after every chat. `super-agent-skill` equips your agent with a **Gold-Level Autonomous Learning Loop** that persists forever in `data/agent_memory.json`:
 
-1. **🔎 Traditional SEO (Google / Bing):** Automated `<head>` tags, OpenGraph social cards, broken link audits, and sitemaps.
-2. **🤖 AEO (Answer Engine Optimization):** Direct-answer text blocks formatted specifically for **Perplexity, SearchGPT, and Claude Web Search** to cite your project.
-3. **⚡ GEO (Generative Engine Optimization):** `llms.txt`, Schema.org, and backlink outreach strategies so LLMs understand your exact software entity and recommend it.
+1. **👤 User Preferences (`log_user_preference`):** Learns your coding style, UI design preferences (HSL Dark OLED, Google Fonts), and tech stack choices.
+2. **⚠️ Mistake Autopsies (`log_mistake_autopsy`):** Records every bug fixed and sets explicit prevention rules so the AI **never repeats the same mistake twice**.
+3. **📌 Scouted Intelligence (`scout_and_update_skill_library`):** Auto-fetches state-of-the-art tools from GitHub every 24 hours.
+4. **🔍 Keyword Memory Search (`search_agent_memory`):** Allows your agent to instantly search through past learned lessons and rules.
 
 ---
 
@@ -85,12 +86,12 @@ No complex build steps. Paste this into your IDE's `mcp_config.json` and you're 
 
 ---
 
-## 📦 The 47-Tool Suite Across 19 Modules
+## 📦 The 48-Tool Suite Across 19 Modules
 
 | Module | Purpose | Tools Provided |
 | :--- | :--- | :--- |
 | **1. Live GitHub Scout** | Real-time GitHub search & 24h auto-updater | `scout_and_update_skill_library`, `get_latest_trending_repos` |
-| **2. Memory & Learning** | Persistent user habit & mistake autopsy storage | `log_user_preference`, `log_mistake_autopsy`, `get_agent_memory`, `get_live_memory_dashboard`, `generate_in_ide_improvement_notification` |
+| **2. Gold Memory Database** | Persistent habit, mistake autopsy & memory search | `log_user_preference`, `log_mistake_autopsy`, `get_agent_memory`, `get_live_memory_dashboard`, `generate_in_ide_improvement_notification`, `search_agent_memory` |
 | **3. Auth & Architecture** | Modern auth & backend stack recommendations | `get_auth_architecture_blueprint`, `get_backend_stack_recommendation` |
 | **4. Prompt Intelligence** | Code comprehension & system prompt optimization | `get_code_comprehension_strategy`, `optimize_agent_prompt` |
 | **5. UI/UX & Mobile Design** | Design system generator & mobile layout blueprints | `get_design_system_recommendation`, `get_ui_component_blueprint`, `get_mobile_app_blueprint`, `audit_ui_design_aesthetic` |
