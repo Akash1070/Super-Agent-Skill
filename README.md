@@ -24,7 +24,7 @@
 
 ## 💎 The $100M Value Equation (Alex Hormozi Framework)
 
-$$\text{Value} = \frac{\text{Dream Outcome} \times \text{Perceived Likelihood of Achievement}}{\text{Time Delay} \times \text{Effort \& Sacrifice}}$$
+$$\text{Value} = \frac{\text{Dream Outcome} \times \text{Perceived Likelihood of Achievement}}{\text{Time Delay} \times \text{Effort and Sacrifice}}$$
 
 | Value Driver | The Old Way (Manual Dev) | Legacy AI Wrappers | 🚀 Super Agent Skill (The New Way) |
 | :--- | :--- | :--- | :--- |
