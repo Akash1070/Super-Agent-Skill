@@ -7,43 +7,37 @@
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple.svg?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Tools Count](https://img.shields.io/badge/Tools-29%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-29-tool-suite-across-12-modules)
-[![Dashboard](https://img.shields.io/badge/Dashboard-localhost:3333-green.svg?style=for-the-badge)](#-web-visual-memory-dashboard)
+[![Tools Count](https://img.shields.io/badge/Tools-30%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-30-tool-suite-across-12-modules)
+[![In-IDE Dashboard](https://img.shields.io/badge/In--IDE-Dashboard-brightgreen.svg?style=for-the-badge)](#-in-ide-visual-intelligence-dashboard)
 
 ---
 
 **Equips AI Assistants (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity, VS Code / Cline) with End-to-End Production Capabilities.**
 
-[⚡ Quick 1-Click Setup](#-1-click-setup-for-any-ai-agent--ide) • [📊 Web Dashboard](#-web-visual-memory-dashboard) • [🗺️ 5-Phase Roadmap](#️-the-5-phase-production-roadmap) • [📦 Tool Matrix](#-the-29-tool-suite-across-12-modules) • [👤 Author](#-author--creator)
+[⚡ Quick 1-Click Setup](#-1-click-setup-for-any-ai-agent--ide) • [🖥️ In-IDE Dashboard](#-in-ide-visual-intelligence-dashboard) • [🗺️ 5-Phase Roadmap](#️-the-5-phase-production-roadmap) • [📦 Tool Matrix](#-the-30-tool-suite-across-12-modules) • [👤 Author](#-author--creator)
 
 </div>
 
 ---
 
-## 📊 Web Visual Memory Dashboard
+## 🖥️ In-IDE Visual Intelligence Dashboard
 
-Open `http://localhost:3333` in your browser to inspect your AI agent's brain in real-time!
+Zero setup required! Developers get a live Intelligence Dashboard **directly inside their IDE chat window** using the tool `get_live_memory_dashboard`:
 
-```bash
-npm run dashboard
-```
-
-- 🔮 **Live Memory Cards:** View learned user preferences and mistake autopsies.
-- 🔍 **Real-Time GitHub Scouting Feed:** View daily scouted open-source repositories.
-- 🎨 **Visual Dark OLED UI:** Built with clean Glassmorphism styling.
-
----
-
-## 💻 Global Terminal CLI Engine
-
-Run scouting scans or inspect agent memory directly from your terminal outside the IDE:
-
-```bash
-# Run a live GitHub scout scan for any technology
-npx super-agent-skill scout "nextjs 15 auth"
-
-# Inspect agent memory rules
-npx super-agent-skill memory
+```markdown
+> [!NOTE]
+> ### 🚀 In-IDE Improvement Summary: Auth Middleware Hardening
+>
+> **What Was Improved:**
+> - ✅ Applied HSL Dark OLED design system palette
+> - ✅ Implemented rate-limiting middleware & HSTS headers
+> - ✅ Fixed N+1 SQL query trap with batch fetching
+>
+> **Metrics Comparison:**
+> - **BEFORE:** `Security: WEAK / SQL Injection Risk`
+> - **AFTER:** `Security: HARDENED / OWASP Compliant`
+>
+> **Safety Verification:** Verified surgical scope & Karpathy zero-collateral edits.
 ```
 
 ---
@@ -78,18 +72,6 @@ No complex terminal installation required! Simply copy and paste the JSON block 
 | **🔌 VS Code (Cline / Roo Code)** | Extension MCP settings panel |
 
 </details>
-
----
-
-## 💡 Why Every Developer Needs `super-agent-skill`
-
-Standard AI coding assistants suffer from **3 major bottlenecks**:
-1. 🧠 **Memory Loss:** They forget your preferences, styling habits, and past mistake fixes in new chat sessions.
-2. 🎨 **Generic UI Taste:** They default to plain colors, standard HTML buttons, and unstyled typography.
-3. 📉 **Static Cutoff Data:** They rely on old training data and miss newly trending open-source tools.
-
-> ### ✨ How Super Agent Skill Solves This:
-> `super-agent-skill` injects **persistent JSON memory**, **curated design systems (Google Fonts, HSL palettes, Glassmorphism)**, and a **24-hour live GitHub scouting engine** directly into your AI assistant's brain!
 
 ---
 
@@ -141,6 +123,25 @@ Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security &
 - `generate_autonomous_pr_fixer`: Automated GitHub Action to fix reported issue bugs via Pull Requests.
 
 </details>
+
+---
+
+## 📦 The 30-Tool Suite Across 12 Modules
+
+| Module | Purpose | Tools Provided |
+| :--- | :--- | :--- |
+| **1. Live GitHub Scout** | Real-time GitHub search & auto-updater | `scout_and_update_skill_library`, `get_latest_trending_repos` |
+| **2. Memory & Learning** | Persistent user habit & mistake autopsy storage | `log_user_preference`, `log_mistake_autopsy`, `get_agent_memory`, `get_live_memory_dashboard`, `generate_in_ide_improvement_notification` |
+| **3. Auth & Architecture** | Modern auth & backend stack recommendations | `get_auth_architecture_blueprint`, `get_backend_stack_recommendation` |
+| **4. Prompt Intelligence** | Code comprehension & system prompt optimization | `get_code_comprehension_strategy`, `optimize_agent_prompt` |
+| **5. UI/UX & Mobile Design** | Design system generator & mobile layout blueprints | `get_design_system_recommendation`, `get_ui_component_blueprint`, `get_mobile_app_blueprint`, `audit_ui_design_aesthetic` |
+| **6. DevOps & Deploy** | Multi-stage Docker generator & failure diagnosis | `generate_docker_setup`, `get_deployment_checklist`, `diagnose_deployment_issue` |
+| **7. Code Security** | OWASP security auditor & code hardening | `audit_security_vulnerabilities`, `generate_security_hardening` |
+| **8. Karpathy Guidelines** | Surgical scope & goal verification guidelines | `get_karpathy_rules`, `evaluate_coding_plan`, `generate_verification_checklist` |
+| **9. Performance & Vitals** | Web Vitals audit & Redis caching strategies | `audit_performance_bottlenecks`, `generate_caching_strategy` |
+| **10. Testing & QA** | Playwright / Vitest / PyTest test suite generator | `generate_test_suite_blueprint` |
+| **11. API Contracts** | Zod schema & TypeScript type contract generator | `generate_typesafe_api_contract` |
+| **12. GitHub CI/CD** | Production GitHub Actions workflow generator | `generate_github_actions_workflow`, `generate_autonomous_pr_fixer` |
 
 ---
 

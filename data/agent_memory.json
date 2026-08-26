@@ -88,6 +88,30 @@
       "url": "https://github.com/carbon-design-system/carbon",
       "category": "24h_production_scout",
       "timestamp": "2026-08-26T08:34:03.653Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [HKUDS/nanobot] (47409★): Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "url": "https://github.com/HKUDS/nanobot",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:36:06.953Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [santifer/career-ops] (68519★): Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "url": "https://github.com/santifer/career-ops",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:36:06.954Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [can1357/oh-my-pi] (27534★): ⌥ Coding agent with the IDE wired in",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:36:06.954Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [apache/maka] (3497★): Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "url": "https://github.com/apache/maka",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:36:06.954Z"
     }
   ]
 }
