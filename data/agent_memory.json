@@ -112,6 +112,30 @@
       "url": "https://github.com/apache/maka",
       "category": "24h_production_scout",
       "timestamp": "2026-08-26T08:36:06.954Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [elie222/rakazo] (1311★): Open-source Grok Bot alternative. Choose your own model and sandbox.",
+      "url": "https://github.com/elie222/rakazo",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:41:06.365Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [microsoft/vscode-react-native] (2737★): VSCode extension for React Native - supports debugging and editor integration",
+      "url": "https://github.com/microsoft/vscode-react-native",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:41:06.366Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [expo/expo] (51833★): An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web.",
+      "url": "https://github.com/expo/expo",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:41:06.366Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [callstack/agent-device] (4222★): Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
+      "url": "https://github.com/callstack/agent-device",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:41:06.366Z"
     }
   ]
 }

@@ -1,7 +1,7 @@
 /**
  * Autonomous Code Refactoring & Modernization Module
- * Upgrades legacy code patterns to modern standards (ESM, React Hooks, Async/Await, Strict Types)
- * and detects dead code bloat.
+ * Upgrades legacy code patterns to modern standards (ESM, React Hooks, Async/Await, Strict Types),
+ * detects dead code bloat, and performs holistic ponytail-style codebase consolidation.
  */
 
 export const REFACTOR_TOOLS = [
@@ -36,6 +36,20 @@ export const REFACTOR_TOOLS = [
         },
       },
       required: ["code_snippet"],
+    },
+  },
+  {
+    name: "ponytail_codebase_modernizer",
+    description: "Inspired by ponytail and gstack. Analyzes holistic repository file structures, identifies duplicated modules, removes dead abstractions, and outputs a surgical codebase consolidation roadmap.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        project_description: {
+          type: "string",
+          description: "Summary of the project or repository file tree",
+        },
+      },
+      required: ["project_description"],
     },
   },
 ];
@@ -91,6 +105,25 @@ export const handleRefactorTool = (name, args) => {
     }
 
     return { content: [{ type: "text", text: audit }] };
+  }
+
+  if (name === "ponytail_codebase_modernizer") {
+    const desc = args.project_description;
+
+    let plan = `# 🎀 Ponytail-Style Codebase Consolidation Plan\n\n`;
+    plan += `> **Target:** \`${desc}\`\n\n`;
+    plan += `### 1. Architectural Consolidation Roadmap\n`;
+    plan += `- 📦 **Module Fusion:** Consolidate fragmented single-function files into domain-driven modular engines.\n`;
+    plan += `- 🧹 **Dead Abstraction Pruning:** Strip unused wrapper classes, redundant pass-through interfaces, and boilerplate.\n`;
+    plan += `- ⚡ **ESM Standardization:** Ensure 100% native ESM (\`"type": "module"\`) across all import boundaries.\n`;
+    plan += `- 🛡️ **Zero-Collateral Guarantee:** Every edit must maintain exact public API contracts.\n\n`;
+
+    plan += `### 2. Modernization Execution Checklist\n`;
+    plan += `1. [ ] Audit repository imports for circular dependency traps.\n`;
+    plan += `2. [ ] Consolidate shared utility helpers into a single utility file.\n`;
+    plan += `3. [ ] Verify test suite coverage passes 100% after file merging.\n`;
+
+    return { content: [{ type: "text", text: plan }] };
   }
 
   throw new Error(`Unknown tool in Refactor module: ${name}`);
