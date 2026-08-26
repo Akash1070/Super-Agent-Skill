@@ -53,7 +53,11 @@ export async function runAutonomousScout() {
     "topic:seo-audits stars:>100",
     "topic:copywriting-prompts stars:>100",
     "topic:monetization-pricing stars:>50",
-    "topic:product-analytics stars:>500"
+    "topic:product-analytics stars:>500",
+    "topic:free-for-dev stars:>50",
+    "topic:public-apis stars:>500",
+    "free-for-life stars:>50",
+    "best-free-things stars:>50"
   ];
 
   const selectedQuery = productionCategories[Math.floor(Math.random() * productionCategories.length)];

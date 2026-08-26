@@ -35,6 +35,7 @@ import { FINTECH_TOOLS, handleFintechTool } from "./modules/fintech_crypto.js";
 import { STAGE_ADVISOR_TOOLS, handleStageAdvisorTool } from "./modules/developer_stage_advisor.js";
 import { FEDERATED_MEMORY_TOOLS, handleFederatedMemoryTool } from "./modules/federated_memory_sync.js";
 import { AI_WORKFLOW_TOOLS, handleAiWorkflowTool } from "./modules/ai_workflow_orchestration.js";
+import { FREE_TIER_TOOLS, handleFreeTierTool } from "./modules/free_founder_tier_engine.js";
 import { initAutonomousScoutCron } from "./modules/cron_auto_scout.js";
 
 const ALL_TOOLS = [
@@ -66,12 +67,13 @@ const ALL_TOOLS = [
   ...STAGE_ADVISOR_TOOLS,
   ...FEDERATED_MEMORY_TOOLS,
   ...AI_WORKFLOW_TOOLS,
+  ...FREE_TIER_TOOLS,
 ];
 
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "15.0.0",
+    version: "16.0.0",
   },
   {
     capabilities: {
@@ -90,6 +92,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   try {
+    if (FREE_TIER_TOOLS.some((t) => t.name === name)) return handleFreeTierTool(name, args);
     if (AI_WORKFLOW_TOOLS.some((t) => t.name === name)) return handleAiWorkflowTool(name, args);
     if (FEDERATED_MEMORY_TOOLS.some((t) => t.name === name)) return handleFederatedMemoryTool(name, args);
     if (STAGE_ADVISOR_TOOLS.some((t) => t.name === name)) return handleStageAdvisorTool(name, args);
@@ -131,7 +134,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v15.0 (62 Tools / 28 Modules) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v16.0 (64 Tools / 29 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();

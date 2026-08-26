@@ -4,6 +4,15 @@ All notable changes to the `super-agent-skill` MCP server will be documented in 
 
 ---
 
+## [16.0.0] - 2026-08-26 (The Free Founder Stack & Public APIs Release)
+
+### 🚀 Added
+- **Free Founder Tier & Public APIs Engine (`modules/free_founder_tier_engine.js`):**
+  - Scouted top repositories: `free-for-dev` (87k+ ★), `public-apis` (300k+ ★), `free-for-life`, and `best-free-things`.
+  - `get_free_developer_stack_recommendation`: $0/month full-stack infrastructure blueprint (Vercel, Neon DB, Upstash Redis, Groq LLM, Resend Email, Cloudflare R2, PostHog).
+  - `get_free_apis_and_services_directory`: Searchable directory of 100% free public APIs (AI, Finance, Geolocation, Email, Scraping).
+- **24-Hour Autonomous Scout Expansion (`modules/cron_auto_scout.js`):** Added `free-for-dev`, `public-apis`, `free-for-life`, and `best-free-things` to continuous background scouting matrix.
+
 ## [15.0.0] - 2026-08-26 (The Supreme Founder & Developer Ecosystem Release)
 
 ### 🚀 Added
@@ -15,16 +24,3 @@ All notable changes to the `super-agent-skill` MCP server will be documented in 
 - **Federated Collective AI Memory Sync (`modules/federated_memory_sync.js`):**
   - `sync_collective_community_memory`: Anonymized memory sync across 100+ developers into GitHub central repository.
   - `get_community_wisdom_report`: Community-proven bug prevention rules and design standards.
-- **Developer Stage Diagnostic Advisor (`modules/developer_stage_advisor.js`):**
-  - `identify_project_stage_and_roadmap`: Automated codebase stage inspection & prioritized next steps.
-  - `generate_developer_value_walkthrough`: Step-by-step execution roadmap for any project stage.
-- **Multimodal AI Engine (`modules/ai_media_engine.js`):** Whisper audio transcription, Vision LLMs, and synthetic data generation.
-- **Web, CMS & E-Commerce (`modules/web_domain_engine.js`):** Stripe Checkout, Payload CMS, and WebAssembly loaders.
-- **Fintech & Crypto Engine (`modules/fintech_crypto.js`):** Quantitative trading execution loops & Plaid banking APIs.
-- **RAG & Vector Database Engine (`modules/rag_vector_engine.js`):** ChromaDB/Qdrant RAG blueprints + PDF/Markdown document chunking.
-- **Stealth Web Scraping (`modules/scraping_automation.js`):** Playwright stealth browser automation.
-- **Data Visualization (`modules/data_viz_engine.js`):** Recharts/Chart.js/Tremor dark OLED responsive analytics charts.
-
-### 🛡️ Security & Performance
-- Zero vulnerabilities, zero over-engineering, 100% Karpathy surgical scope compliance.
-- 24-Hour Autonomous Background Scout Cron loop.

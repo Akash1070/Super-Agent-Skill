@@ -1,7 +1,7 @@
 {
   "name": "super-agent-skills-mcp",
-  "version": "15.0.0",
-  "description": "The Zero-BS, Full-Stack AI Coding, Growth & Ecosystem Engine for Builders & Founders. 62 active tools across 28 modules featuring RAG, Vector DBs, Multi-Agent Orchestration, SEO/AEO/GEO, Auth, Security, DevOps, Monetization, and Federated Collective Memory.",
+  "version": "16.0.0",
+  "description": "The Zero-BS, Full-Stack AI Coding, Growth & Ecosystem Engine for Builders & Founders. 64 active tools across 29 modules featuring Free Developer Tiers, Public APIs, RAG, Vector DBs, Multi-Agent Orchestration, SEO/AEO/GEO, Auth, Security, DevOps, Monetization, and Federated Collective Memory.",
   "main": "index.js",
   "bin": {
     "super-agent-skill": "scripts/cli.js"
@@ -20,6 +20,9 @@
     "ai-agent",
     "memory-learning-loop",
     "github-scout",
+    "free-for-dev",
+    "public-apis",
+    "free-developer-stack",
     "design-system",
     "devops",
     "security-audit",

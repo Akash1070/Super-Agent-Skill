@@ -178,6 +178,24 @@
       "url": "https://github.com/mui/base-ui",
       "category": "24h_production_scout",
       "timestamp": "2026-08-26T09:10:51.696Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [unovue/reka-ui] (6742★): An open-source UI component library for building high-quality, accessible design systems and web apps for Vue. Previously Radix Vue",
+      "url": "https://github.com/unovue/reka-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T11:16:40.099Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [mui/material-ui] (98928★): Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
+      "url": "https://github.com/mui/material-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T11:16:40.101Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [lobehub/lobe-ui] (2159★): 🍭  Lobe UI - an open-source UI component library for building AIGC web apps",
+      "url": "https://github.com/lobehub/lobe-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T11:16:40.101Z"
     }
   ]
 }

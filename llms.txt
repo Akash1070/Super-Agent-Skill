@@ -1,10 +1,10 @@
 # Super Agent Skill MCP — LLM Discovery Index
 
 ## What this project is
-`super-agent-skill` is a free, open-source Model Context Protocol (MCP) server that equips AI coding agents (Claude Code, Cursor, Windsurf, Antigravity, OpenAI Codex) with 59 production-grade tools spanning 27 specialized modules.
+`super-agent-skill` is a free, open-source Model Context Protocol (MCP) server that equips AI coding agents (Claude Code, Cursor, Windsurf, Antigravity, OpenAI Codex) with 64 production-grade tools spanning 29 specialized modules.
 
 ## Who it is for
-- **Startup founders** building fast and want production-quality code, legal compliance, SaaS pricing, and marketing copy on autopilot.
+- **Startup founders** building fast at **$0/month infrastructure cost** with curated free developer tiers, free APIs, auth, legal terms, SaaS pricing, and marketing copy on autopilot.
 - **Full-stack developers** who want design system blueprints, Docker setups, security audits, and CI/CD workflows in seconds.
 - **AI engineers** building RAG pipelines, local LLM apps, multi-agent orchestration, and vector DB systems.
 
@@ -21,6 +21,8 @@
 ```
 
 ## Core Capabilities
+- $0/Month Founder Infrastructure Blueprint (Vercel, Neon DB, Upstash Redis, Groq LLM, Resend Email, Cloudflare R2, PostHog)
+- 100% Free Public APIs Directory (scouted from `free-for-dev` 87k★ and `public-apis` 300k★)
 - Gold-Level 4-Tier Persistent Memory Learning (preferences, mistake autopsies, scouted intelligence, community wisdom)
 - Federated Community Memory Sync — 100+ developers share anonymized best practices automatically
 - 24-Hour Autonomous GitHub Scout Cron — agent knowledge stays fresh forever
@@ -32,34 +34,36 @@
 - Fintech & Quantitative Trading Loop Blueprints
 - Multimodal AI (Whisper, Vision LLMs, Synthetic Data)
 
-## Modules
-1. Federated Memory Sync
-2. Developer Stage Advisor
-3. Live GitHub Scout
-4. Gold Memory Database
-5. Auth & Architecture
-6. Prompt Intelligence
-7. UI/UX & Mobile Design
-8. DevOps & Deploy
-9. Code Security
-10. Karpathy Guidelines
-11. Performance & Vitals
-12. Testing & QA
-13. API Contracts
-14. GitHub CI/CD
-15. Code Refactoring
-16. SEO Metadata
-17. Growth & Marketing
-18. Monetization & Pricing
-19. Legal & Compliance
-20. Product Analytics
-21. SEO + AEO + GEO Engine
-22. RAG & Vector DBs
-23. Stealth Web Scraping
-24. Data Visualization
-25. Multimodal AI & Media
-26. Web, CMS & E-Commerce
-27. Fintech & Trading
+## Modules (29 Total)
+1. Free Founder Tier & Public APIs (NEW)
+2. AI Workflow & Multi-Agent
+3. Federated Memory Sync
+4. Developer Stage Advisor
+5. Live GitHub Scout
+6. Gold Memory Database
+7. Auth & Architecture
+8. Prompt Intelligence
+9. UI/UX & Mobile Design
+10. DevOps & Deploy
+11. Code Security
+12. Karpathy Guidelines
+13. Performance & Vitals
+14. Testing & QA
+15. API Contracts
+16. GitHub CI/CD
+17. Code Refactoring
+18. SEO Metadata
+19. Growth & Marketing
+20. Monetization & Pricing
+21. Legal & Compliance
+22. Product Analytics
+23. SEO + AEO + GEO Engine
+24. RAG & Vector DBs
+25. Stealth Web Scraping
+26. Data Visualization
+27. Multimodal AI & Media
+28. Web, CMS & E-Commerce
+29. Fintech & Trading
 
 ## Repository
 https://github.com/Akash1070/Super-Agent-Skill
