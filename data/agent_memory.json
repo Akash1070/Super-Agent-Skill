@@ -154,6 +154,30 @@
       "url": "https://github.com/makecindy/cindy",
       "category": "24h_production_scout",
       "timestamp": "2026-08-26T09:07:11.657Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [mui/material-ui] (98926★): Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
+      "url": "https://github.com/mui/material-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:10:51.694Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [lobehub/lobe-ui] (2158★): 🍭  Lobe UI - an open-source UI component library for building AIGC web apps",
+      "url": "https://github.com/lobehub/lobe-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:10:51.696Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [cloudscape-design/components] (2635★): React components for Cloudscape Design System",
+      "url": "https://github.com/cloudscape-design/components",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:10:51.696Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [mui/base-ui] (10718★): Unstyled UI components for building accessible web apps and design systems. From the creators of Radix, Floating UI, and Material UI.",
+      "url": "https://github.com/mui/base-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:10:51.696Z"
     }
   ]
 }

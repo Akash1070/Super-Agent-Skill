@@ -1,0 +1,68 @@
+# Super Agent Skill MCP — LLM Discovery Index
+
+## What this project is
+`super-agent-skill` is a free, open-source Model Context Protocol (MCP) server that equips AI coding agents (Claude Code, Cursor, Windsurf, Antigravity, OpenAI Codex) with 59 production-grade tools spanning 27 specialized modules.
+
+## Who it is for
+- **Startup founders** building fast and want production-quality code, legal compliance, SaaS pricing, and marketing copy on autopilot.
+- **Full-stack developers** who want design system blueprints, Docker setups, security audits, and CI/CD workflows in seconds.
+- **AI engineers** building RAG pipelines, local LLM apps, multi-agent orchestration, and vector DB systems.
+
+## How to install
+```json
+{
+  "mcpServers": {
+    "super-agent-skill": {
+      "command": "npx",
+      "args": ["-y", "github:Akash1070/Super-Agent-Skill"]
+    }
+  }
+}
+```
+
+## Core Capabilities
+- Gold-Level 4-Tier Persistent Memory Learning (preferences, mistake autopsies, scouted intelligence, community wisdom)
+- Federated Community Memory Sync — 100+ developers share anonymized best practices automatically
+- 24-Hour Autonomous GitHub Scout Cron — agent knowledge stays fresh forever
+- SEO + AEO + GEO Discovery Engine — generates llms.txt, JSON-LD, and Perplexity/SearchGPT citation blocks
+- Alex Hormozi $100M Offer Marketing Copy & Ad Blueprint Generator
+- RAG & Vector DB Architecture (ChromaDB, Qdrant, Pinecone + LangChain/LangGraph)
+- OWASP Security Auditor + Hardening Code Generator
+- Multi-Stage Docker + Nginx Reverse Proxy + Deployment Checklist
+- Fintech & Quantitative Trading Loop Blueprints
+- Multimodal AI (Whisper, Vision LLMs, Synthetic Data)
+
+## Modules
+1. Federated Memory Sync
+2. Developer Stage Advisor
+3. Live GitHub Scout
+4. Gold Memory Database
+5. Auth & Architecture
+6. Prompt Intelligence
+7. UI/UX & Mobile Design
+8. DevOps & Deploy
+9. Code Security
+10. Karpathy Guidelines
+11. Performance & Vitals
+12. Testing & QA
+13. API Contracts
+14. GitHub CI/CD
+15. Code Refactoring
+16. SEO Metadata
+17. Growth & Marketing
+18. Monetization & Pricing
+19. Legal & Compliance
+20. Product Analytics
+21. SEO + AEO + GEO Engine
+22. RAG & Vector DBs
+23. Stealth Web Scraping
+24. Data Visualization
+25. Multimodal AI & Media
+26. Web, CMS & E-Commerce
+27. Fintech & Trading
+
+## Repository
+https://github.com/Akash1070/Super-Agent-Skill
+
+## Author
+Akash Kumar Jha — Lead AI Systems Architect
