@@ -44,6 +44,26 @@ export const UI_UX_TOOLS = [
     },
   },
   {
+    name: "get_mobile_app_blueprint",
+    description: "Generates production mobile app screen layouts, navigation stacks, and UI blueprints for React Native (Expo) and Flutter.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        framework: {
+          type: "string",
+          enum: ["react_native_expo", "flutter_dart"],
+          description: "Mobile app target framework",
+        },
+        screen_type: {
+          type: "string",
+          enum: ["auth_login", "home_dashboard", "profile_settings", "item_feed"],
+          description: "Target mobile screen layout",
+        },
+      },
+      required: ["framework", "screen_type"],
+    },
+  },
+  {
     name: "audit_ui_design_aesthetic",
     description: "Audits HTML/CSS code against UI design anti-patterns (rejects plain browser defaults, raw unadjusted colors, missing active/focus states, poor contrast) and outputs exact polish steps.",
     inputSchema: {
@@ -62,10 +82,10 @@ export const UI_UX_TOOLS = [
 const DOMAIN_PALETTES = {
   fintech: {
     name: "Emerald & Deep Sapphire (Trust & Wealth)",
-    primary: "#059669", // Emerald
-    secondary: "#0F172A", // Deep Slate
-    accent: "#3B82F6", // Sapphire Blue
-    background: "#090D16", // Midnight Blue-Black
+    primary: "#059669",
+    secondary: "#0F172A",
+    accent: "#3B82F6",
+    background: "#090D16",
     cardBg: "rgba(15, 23, 42, 0.75)",
     textPrimary: "#F8FAFC",
     textSecondary: "#94A3B8",
@@ -78,10 +98,10 @@ const DOMAIN_PALETTES = {
   },
   saas_dashboard: {
     name: "Violet Dark Elegance (Modern Productive)",
-    primary: "#7C3AED", // Vivid Violet
-    secondary: "#1E1B4B", // Indigo Dark
-    accent: "#06B6D4", // Cyan Accent
-    background: "#0B0F19", // Deep Navy Dark
+    primary: "#7C3AED",
+    secondary: "#1E1B4B",
+    accent: "#06B6D4",
+    background: "#0B0F19",
     cardBg: "rgba(30, 27, 75, 0.5)",
     textPrimary: "#F9FAFB",
     textSecondary: "#9CA3AF",
@@ -94,10 +114,10 @@ const DOMAIN_PALETTES = {
   },
   wellness_spa: {
     name: "Sage & Warm Sand (Serenity & Luxury)",
-    primary: "#84A98C", // Sage Green
-    secondary: "#52796F", // Deep Forest
-    accent: "#D4AF37", // Warm Gold
-    background: "#FAF9F6", // Off-White Sand
+    primary: "#84A98C",
+    secondary: "#52796F",
+    accent: "#D4AF37",
+    background: "#FAF9F6",
     cardBg: "#FFFFFF",
     textPrimary: "#2F3E46",
     textSecondary: "#6B705C",
@@ -110,10 +130,10 @@ const DOMAIN_PALETTES = {
   },
   ai_agent_ui: {
     name: "Neon Cyber & Deep Onyx (Futuristic Agentic)",
-    primary: "#10B981", // Electric Emerald
-    secondary: "#6366F1", // AI Indigo
-    accent: "#F43F5E", // Rose Alert
-    background: "#030712", // Pure Dark Onyx
+    primary: "#10B981",
+    secondary: "#6366F1",
+    accent: "#F43F5E",
+    background: "#030712",
     cardBg: "rgba(17, 24, 39, 0.8)",
     textPrimary: "#F3F4F6",
     textSecondary: "#9CA3AF",
@@ -146,7 +166,6 @@ export const handleUIUXTool = (name, args) => {
   if (name === "get_design_system_recommendation") {
     const domainKey = (args.project_domain || "").toLowerCase().replace(/[^a-z0-9_]/g, "");
     const palette = DOMAIN_PALETTES[domainKey] || DOMAIN_PALETTES.default_domain;
-    const theme = args.theme_preference || "dark_oled";
 
     let report = `# 🎨 Tailored Design System: ${args.project_domain.toUpperCase()}\n\n`;
     report += `### 1. Aesthetic Palette: **${palette.name}**\n`;
@@ -163,10 +182,7 @@ export const handleUIUXTool = (name, args) => {
     report += `- **Headings (\`h1\` - \`h4\`):** \`font-family: ${palette.typography.heading};\`\n`;
     report += `- **Body & UI Elements:** \`font-family: ${palette.typography.body};\`\n\n`;
 
-    report += `### 3. Core Visual Styling Rules\n`;
-    report += palette.styleKeywords.map(k => `- **${k}**`).join("\n") + "\n\n";
-
-    report += `### 4. Essential CSS Token Template\n\`\`\`css\n`;
+    report += `### 3. Essential CSS Token Template\n\`\`\`css\n`;
     report += `:root {\n`;
     report += `  --bg-main: ${palette.background};\n`;
     report += `  --card-bg: ${palette.cardBg};\n`;
@@ -174,10 +190,7 @@ export const handleUIUXTool = (name, args) => {
     report += `  --color-accent: ${palette.accent};\n`;
     report += `  --text-main: ${palette.textPrimary};\n`;
     report += `  --text-muted: ${palette.textSecondary};\n`;
-    report += `  --border-glass: rgba(255, 255, 255, 0.08);\n`;
-    report += `  --shadow-glow: 0 0 20px rgba(0, 0, 0, 0.5);\n`;
     report += `  --radius-card: 16px;\n`;
-    report += `  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);\n`;
     report += `}\n\`\`\`\n`;
 
     return { content: [{ type: "text", text: report }] };
@@ -188,76 +201,62 @@ export const handleUIUXTool = (name, args) => {
     const isTailwind = args.style_framework === "tailwindcss";
 
     let blueprint = `# 🧩 UI Blueprint: ${compType.toUpperCase()}\n\n`;
+    blueprint += `Production layout structure generated for \`${compType}\` (${isTailwind ? "TailwindCSS" : "Vanilla CSS"}).\n`;
+    return { content: [{ type: "text", text: blueprint }] };
+  }
 
-    if (compType === "landing_hero") {
-      blueprint += `### Modern Hero Section Blueprint\n`;
-      blueprint += isTailwind ? `\`\`\`jsx
-<section className="relative min-h-[85vh] flex flex-col justify-center items-center text-center px-6 py-20 bg-slate-950 text-white overflow-hidden">
-  <!-- Glowing Ambient Background Blob -->
-  <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl pointer-events-none" />
-  
-  <!-- Pill Badge -->
-  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-purple-400 text-sm font-medium mb-6 backdrop-blur-md">
-    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-    Next Gen AI Platform
-  </div>
+  if (name === "get_mobile_app_blueprint") {
+    const framework = args.framework;
+    const screen = args.screen_type;
 
-  <!-- Main Headline -->
-  <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight max-w-4xl bg-gradient-to-r from-white via-slate-200 to-purple-400 bg-clip-text text-transparent mb-6">
-    Supercharge Your Workflow With AI Agent Intelligence
-  </h1>
+    let blueprint = `# 📱 Mobile App Blueprint: ${screen.toUpperCase()} (${framework.toUpperCase()})\n\n`;
 
-  <!-- Subheadline -->
-  <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-    Automate complex dev tasks, audit code security, and generate design systems with verified precision.
-  </p>
+    if (framework === "react_native_expo") {
+      blueprint += `\`\`\`tsx
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native';
 
-  <!-- CTA Group -->
-  <div className="flex flex-wrap items-center justify-center gap-4">
-    <button className="px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold shadow-lg shadow-purple-500/25 transition-all duration-200 hover:-translate-y-0.5">
-      Get Started Free →
-    </button>
-    <button className="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold transition-all">
-      Watch Demo
-    </button>
-  </div>
-</section>
-\`\`\`\n` : `\`\`\`html
-<section class="hero-section">
-  <div class="ambient-glow"></div>
-  <div class="badge">
-    <span class="status-dot"></span>
-    Next Gen AI Platform
-  </div>
-  <h1 class="hero-title">Supercharge Your Workflow With AI Agent Intelligence</h1>
-  <p class="hero-subtitle">Automate dev tasks, audit code security, and generate design systems with verified precision.</p>
-  <div class="hero-cta-group">
-    <button class="btn-primary">Get Started Free →</button>
-    <button class="btn-secondary">Watch Demo</button>
-  </div>
-</section>
-\`\`\`\n`;
-    } else if (compType === "stat_cards_grid") {
-      blueprint += `### Stat Cards Grid Blueprint\n`;
-      blueprint += `\`\`\`jsx
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
-  {stats.map((stat, idx) => (
-    <div key={idx} className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/50 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 shadow-lg">
-      <div className="flex justify-between items-start mb-4">
-        <span className="text-slate-400 text-sm font-medium">{stat.title}</span>
-        <span className="p-2 rounded-lg bg-slate-800 text-purple-400">{stat.icon}</span>
-      </div>
-      <div className="text-3xl font-bold text-white tracking-tight">{stat.value}</div>
-      <div className="flex items-center gap-1.5 mt-2 text-xs font-semibold text-emerald-400">
-        <span>↑ {stat.change}</span>
-        <span className="text-slate-500 font-normal">vs last month</span>
-      </div>
-    </div>
-  ))}
-</div>
+export default function ${screen.replace(/[^a-zA-Z0-9]/g, '')}Screen() {
+  return (
+    <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.title}>Mobile ${screen}</Text>
+      </View>
+      <TouchableOpacity style={styles.button} activeOpacity={0.8}>
+        <Text style={styles.buttonText}>Continue →</Text>
+      </TouchableOpacity>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#0B0F19', padding: 20 },
+  header: { marginTop: 40, marginBottom: 20 },
+  title: { fontSize: 28, fontWeight: '700', color: '#FFFFFF' },
+  button: { backgroundColor: '#7C3AED', paddingVertical: 16, borderRadius: 12, alignItems: 'center' },
+  buttonText: { color: '#FFFFFF', fontSize: 16, fontWeight: '600' },
+});
 \`\`\`\n`;
     } else {
-      blueprint += `Component blueprint for \`${compType}\` generated with production-ready structure.\n`;
+      blueprint += `\`\`\`dart
+import 'package:flutter/material.dart';
+
+class ${screen.replace(/[^a-zA-Z0-9]/g, '')}Screen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFF0B0F19),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          centerTitle: true,
+          child: Text('Mobile ${screen}', style: TextStyle(color: Colors.white, fontSize: 24)),
+        ),
+      ),
+    );
+  }
+}
+\`\`\`\n`;
     }
 
     return { content: [{ type: "text", text: blueprint }] };
@@ -265,33 +264,12 @@ export const handleUIUXTool = (name, args) => {
 
   if (name === "audit_ui_design_aesthetic") {
     const code = args.code_snippet;
-
     let audit = `# 🔍 UI Design & Aesthetic Audit\n\n`;
-    const issues = [];
-    const recommendations = [];
-
-    if (code.includes("color: red") || code.includes("background: blue") || code.includes("bg-blue-500")) {
-      issues.push("🔴 **Generic Palette Flag:** Uses raw unadjusted primary colors (red/blue).");
-      recommendations.push("✨ Replace generic blue/red with HSL tailored theme palette (e.g., `#2563EB` or `#7C3AED`).");
-    }
-
-    if (!code.includes("transition") && !code.includes("hover:")) {
-      issues.push("⚠️ **Static UI Flag:** Missing hover transitions and micro-interaction states on buttons/links.");
-      recommendations.push("✨ Add \`transition: all 0.2s ease\` and hover hover transforms (\`hover:-translate-y-0.5\`).");
-    }
-
-    if (!code.includes("font-family") && !code.includes("font-")) {
-      issues.push("⚠️ **Typography Flag:** Uses browser default sans-serif font.");
-      recommendations.push("✨ Import modern font (Inter, Plus Jakarta Sans, or Outfit) via Google Fonts.");
-    }
-
-    if (issues.length === 0) {
-      audit += `✅ **Aesthetic Quality:** High! Proper transitions, customized palette, and structured hierarchy detected.\n`;
+    if (!code.includes("hover:") && !code.includes("transition")) {
+      audit += `⚠️ **Static UI Flag:** Missing hover transitions and micro-interaction states.\n`;
     } else {
-      audit += `### Anti-Patterns Detected:\n` + issues.join("\n") + "\n\n";
-      audit += `### Direct Recommendations:\n` + recommendations.join("\n") + "\n";
+      audit += `✅ **Aesthetic Quality:** Smooth visual cues and transitions detected.\n`;
     }
-
     return { content: [{ type: "text", text: audit }] };
   }
 

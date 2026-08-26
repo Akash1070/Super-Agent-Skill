@@ -1,7 +1,7 @@
 /**
  * 24-Hour Autonomous Background Scout Cron Engine
  * Runs non-blockingly on server bootup and every 24 hours thereafter to fetch trending repos
- * across ALL production app/website building blocks (SaaS templates, Fullstack, AI Agents, UI/UX, Databases, Auth, DevOps, Performance).
+ * across Web, Mobile Apps (React Native, Expo, Flutter, iOS/Android), SaaS, AI Agents, UI/UX, Databases, Auth, DevOps, and Performance.
  */
 
 import fs from "fs";
@@ -34,9 +34,12 @@ function saveMemory(data) {
 }
 
 export async function runAutonomousScout() {
-  console.error("🔄 [24h Auto-Scout Cron] Querying GitHub live index for production-ready app building blocks...");
+  console.error("🔄 [24h Auto-Scout Cron] Querying GitHub live index for Mobile, Web & Production app building blocks...");
   
   const productionCategories = [
+    "topic:react-native stars:>1000",
+    "topic:flutter stars:>2000",
+    "topic:expo stars:>1000",
     "topic:saas-boilerplate stars:>500",
     "topic:fullstack-framework stars:>1000",
     "topic:ai-agent stars:>1000",
@@ -44,8 +47,7 @@ export async function runAutonomousScout() {
     "topic:devops stars:>1500",
     "topic:database-orm stars:>1500",
     "topic:authentication stars:>1000",
-    "topic:web-vitals stars:>500",
-    "topic:microservices stars:>1000"
+    "topic:web-vitals stars:>500"
   ];
 
   const selectedQuery = productionCategories[Math.floor(Math.random() * productionCategories.length)];
@@ -77,9 +79,9 @@ export async function runAutonomousScout() {
 
       if (addedCount > 0) {
         saveMemory(memory);
-        console.error(`✅ [24h Auto-Scout Cron] Added ${addedCount} new production-ready tool rules to agent_memory.json!`);
+        console.error(`✅ [24h Auto-Scout Cron] Added ${addedCount} new mobile/web production tool rules to agent_memory.json!`);
       } else {
-        console.error("ℹ️ [24h Auto-Scout Cron] Agent memory is up-to-date with latest scouted production tools.");
+        console.error("ℹ️ [24h Auto-Scout Cron] Agent memory is up-to-date with latest scouted mobile/web tools.");
       }
     }
   } catch (err) {
