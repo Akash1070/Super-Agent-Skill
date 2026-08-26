@@ -1,7 +1,7 @@
 /**
  * 24-Hour Autonomous Background Scout Cron Engine
  * Runs non-blockingly on server bootup and every 24 hours thereafter to fetch trending repos
- * and automatically update agent_memory.json in real-time.
+ * across ALL production app/website building blocks (SaaS templates, Fullstack, AI Agents, UI/UX, Databases, Auth, DevOps, Performance).
  */
 
 import fs from "fs";
@@ -11,7 +11,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const MEMORY_FILE_PATH = path.join(__dirname, "..", "data", "agent_memory.json");
-const TWENTY_FOUR_HOURS_MS = 24 * 60 * 60 * 1000; // 86400000 ms
+const TWENTY_FOUR_HOURS_MS = 24 * 60 * 60 * 1000;
 
 function readMemory() {
   try {
@@ -34,9 +34,21 @@ function saveMemory(data) {
 }
 
 export async function runAutonomousScout() {
-  console.error("🔄 [24h Auto-Scout Cron] Querying GitHub live index for trending repositories...");
-  const categories = ["topic:ai-agent stars:>1000", "topic:design-system stars:>2000", "topic:devops stars:>1500"];
-  const selectedQuery = categories[Math.floor(Math.random() * categories.length)];
+  console.error("🔄 [24h Auto-Scout Cron] Querying GitHub live index for production-ready app building blocks...");
+  
+  const productionCategories = [
+    "topic:saas-boilerplate stars:>500",
+    "topic:fullstack-framework stars:>1000",
+    "topic:ai-agent stars:>1000",
+    "topic:design-system stars:>2000",
+    "topic:devops stars:>1500",
+    "topic:database-orm stars:>1500",
+    "topic:authentication stars:>1000",
+    "topic:web-vitals stars:>500",
+    "topic:microservices stars:>1000"
+  ];
+
+  const selectedQuery = productionCategories[Math.floor(Math.random() * productionCategories.length)];
 
   try {
     const headers = { "User-Agent": "Antigravity-Autonomous-Agent" };
@@ -44,19 +56,19 @@ export async function runAutonomousScout() {
       headers["Authorization"] = `token ${process.env.GITHUB_TOKEN}`;
     }
 
-    const res = await fetch(`https://api.github.com/search/repositories?q=${encodeURIComponent(selectedQuery)}&sort=updated&order=desc&per_page=3`, { headers });
+    const res = await fetch(`https://api.github.com/search/repositories?q=${encodeURIComponent(selectedQuery)}&sort=updated&order=desc&per_page=4`, { headers });
     if (res.ok) {
       const data = await res.json();
       const memory = readMemory();
       let addedCount = 0;
 
       data.items.forEach((item) => {
-        const ruleText = `Auto-Scouted [${item.full_name}] (${item.stargazers_count}★): ${item.description || "No description"}`;
+        const ruleText = `Auto-Scouted Production Tool [${item.full_name}] (${item.stargazers_count}★): ${item.description || "No description"}`;
         if (!memory.project_rules.some((r) => r.rule === ruleText)) {
           memory.project_rules.push({
             rule: ruleText,
             url: item.html_url,
-            category: "24h_cron_scout",
+            category: "24h_production_scout",
             timestamp: new Date().toISOString(),
           });
           addedCount++;
@@ -65,9 +77,9 @@ export async function runAutonomousScout() {
 
       if (addedCount > 0) {
         saveMemory(memory);
-        console.error(`✅ [24h Auto-Scout Cron] Added ${addedCount} new trending repository rules to agent_memory.json!`);
+        console.error(`✅ [24h Auto-Scout Cron] Added ${addedCount} new production-ready tool rules to agent_memory.json!`);
       } else {
-        console.error("ℹ️ [24h Auto-Scout Cron] Agent memory is already up-to-date with latest scouted repos.");
+        console.error("ℹ️ [24h Auto-Scout Cron] Agent memory is up-to-date with latest scouted production tools.");
       }
     }
   } catch (err) {
@@ -76,12 +88,10 @@ export async function runAutonomousScout() {
 }
 
 export function initAutonomousScoutCron() {
-  // Run once non-blockingly after 5 seconds of server startup
   setTimeout(() => {
     runAutonomousScout().catch((e) => console.error("Cron error:", e));
   }, 5000);
 
-  // Schedule to repeat every 24 hours
   setInterval(() => {
     runAutonomousScout().catch((e) => console.error("Cron error:", e));
   }, TWENTY_FOUR_HOURS_MS);

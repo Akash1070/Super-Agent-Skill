@@ -3,6 +3,9 @@
   "version": "4.0.0",
   "description": "Production-grade Model Context Protocol (MCP) server for AI Coding Agents featuring 24-Hour Autonomous GitHub Scouting, Persistent Memory Learning, UI/UX Design Intelligence, DevOps & Docker Engine, Defensive Code Security, and Performance Auditing.",
   "main": "index.js",
+  "bin": {
+    "super-agent-skill": "index.js"
+  },
   "type": "module",
   "scripts": {
     "start": "node index.js",
