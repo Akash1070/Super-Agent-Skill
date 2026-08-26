@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🚀 SUPER AGENT SKILL v15.0
-### *The $100M Grand Slam AI Engineering & Growth Engine for Builders & Founders*
+### *AI Engineering & Growth Engine for Builders & Founders*
 
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
