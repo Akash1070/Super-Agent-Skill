@@ -24,118 +24,70 @@
       "timestamp": "2026-08-26T13:28:00Z"
     },
     {
-      "rule": "Auto-Scouted [kestra-io/kestra] (27922★): Event Driven Orchestration & Scheduling Platform for Mission Critical Applications",
-      "url": "https://github.com/kestra-io/kestra",
-      "category": "24h_cron_scout",
-      "timestamp": "2026-08-26T08:23:14.068Z"
+      "rule": "Marketing Scout [MADEVAL/MindFluence]: High-Converting Copywriting & Psychological Influencer Marketing Blueprint",
+      "url": "https://github.com/MADEVAL/MindFluence",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
     },
     {
-      "rule": "Auto-Scouted [superplanehq/superplane] (5526★): The open source control plane for agentic engineering.",
-      "url": "https://github.com/superplanehq/superplane",
-      "category": "24h_cron_scout",
-      "timestamp": "2026-08-26T08:23:14.069Z"
+      "rule": "Marketing Scout [Varnan-Tech/position-me]: Brand Positioning & Product Category Creation Framework",
+      "url": "https://github.com/Varnan-Tech/position-me",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
     },
     {
-      "rule": "Auto-Scouted [grafana/pyroscope] (11640★): Continuous Profiling Platform. Debug performance issues down to a single line of code",
-      "url": "https://github.com/grafana/pyroscope",
-      "category": "24h_cron_scout",
-      "timestamp": "2026-08-26T08:23:14.069Z"
+      "rule": "Marketing Scout [Archibaldys/ai-copywriting-prompts]: State-of-the-Art AI Copywriting Prompt Blueprints",
+      "url": "https://github.com/Archibaldys/ai-copywriting-prompts",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [MetaMask/metamask-mobile] (3013★): Mobile web browser providing access to websites that use the Ethereum blockchain",
-      "url": "https://github.com/MetaMask/metamask-mobile",
+      "rule": "Marketing Scout [coreyhaines31/marketingskills]: Core Marketing Skills for SaaS & Web Products",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
+    },
+    {
+      "rule": "Marketing Scout [alexsmedile/hormozi-skills]: Alex Hormozi $100M Grand Slam Offer & Value Equation Framework",
+      "url": "https://github.com/alexsmedile/hormozi-skills",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
+    },
+    {
+      "rule": "Marketing Scout [adkit/ads-skills]: Direct-Response Ad Copywriting & Campaign Angle Generator",
+      "url": "https://github.com/adkit/ads-skills",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
+    },
+    {
+      "rule": "Marketing Scout [twominutereports/marketing-skills]: Data-Driven Marketing Metrics & Growth Analytics",
+      "url": "https://github.com/twominutereports/marketing-skills",
+      "category": "marketing_scout",
+      "timestamp": "2026-08-26T14:14:00Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [nuxt/fonts] (599★): Plug-and-play web font optimization and configuration for Nuxt apps.",
+      "url": "https://github.com/nuxt/fonts",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:29:25.999Z"
+      "timestamp": "2026-08-26T08:45:26.891Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [measure-sh/measure] (1374★): Measure helps mobile teams monitor and fix crashes, ANRs, bugs, and performance issues. The open source alternative to Firebase Crashlytics.",
-      "url": "https://github.com/measure-sh/measure",
+      "rule": "Auto-Scouted Production Tool [unjs/fontaine] (1983★): Automatic font fallback based on font metrics",
+      "url": "https://github.com/unjs/fontaine",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:29:26.000Z"
+      "timestamp": "2026-08-26T08:45:26.893Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [makecindy/cindy] (2307★): Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-      "url": "https://github.com/makecindy/cindy",
+      "rule": "Auto-Scouted Production Tool [openreplay/openreplay] (12576★): Session replay, cobrowsing and product analytics you can self-host. Best for reproducing issues and iterating on your product.",
+      "url": "https://github.com/openreplay/openreplay",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:29:26.000Z"
+      "timestamp": "2026-08-26T08:45:26.893Z"
     },
     {
-      "rule": "Auto-Scouted Production Tool [react/react-native] (126412★): A framework for building native applications using React",
-      "url": "https://github.com/react/react-native",
+      "rule": "Auto-Scouted Production Tool [basics/nuxt-booster] (865★): nuxt-booster will help you to improve the lighthouse performance score (100/100) of your website. 🚀",
+      "url": "https://github.com/basics/nuxt-booster",
       "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:29:26.000Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [cloudscape-design/components] (2635★): React components for Cloudscape Design System",
-      "url": "https://github.com/cloudscape-design/components",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:34:03.651Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [lobehub/lobe-ui] (2158★): 🍭  Lobe UI - an open-source UI component library for building AIGC web apps",
-      "url": "https://github.com/lobehub/lobe-ui",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:34:03.653Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [mui/base-ui] (10718★): Unstyled UI components for building accessible web apps and design systems. From the creators of Radix, Floating UI, and Material UI.",
-      "url": "https://github.com/mui/base-ui",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:34:03.653Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [carbon-design-system/carbon] (9385★): A design system built by IBM",
-      "url": "https://github.com/carbon-design-system/carbon",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:34:03.653Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [HKUDS/nanobot] (47409★): Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-      "url": "https://github.com/HKUDS/nanobot",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:36:06.953Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [santifer/career-ops] (68519★): Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
-      "url": "https://github.com/santifer/career-ops",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:36:06.954Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [can1357/oh-my-pi] (27534★): ⌥ Coding agent with the IDE wired in",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:36:06.954Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [apache/maka] (3497★): Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "url": "https://github.com/apache/maka",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:36:06.954Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [elie222/rakazo] (1311★): Open-source Grok Bot alternative. Choose your own model and sandbox.",
-      "url": "https://github.com/elie222/rakazo",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:41:06.365Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [microsoft/vscode-react-native] (2737★): VSCode extension for React Native - supports debugging and editor integration",
-      "url": "https://github.com/microsoft/vscode-react-native",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:41:06.366Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [expo/expo] (51833★): An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web.",
-      "url": "https://github.com/expo/expo",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:41:06.366Z"
-    },
-    {
-      "rule": "Auto-Scouted Production Tool [callstack/agent-device] (4222★): Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
-      "url": "https://github.com/callstack/agent-device",
-      "category": "24h_production_scout",
-      "timestamp": "2026-08-26T08:41:06.366Z"
+      "timestamp": "2026-08-26T08:45:26.893Z"
     }
   ]
 }

@@ -1,6 +1,7 @@
 /**
- * Marketing, Copywriting & Visual Asset Generation Engine Module
- * Inspired by high-converting SaaS landing pages, Product Hunt launches, and Show HN copy.
+ * Marketing, Copywriting & Brand Growth Engine Module
+ * Inspired by Alex Hormozi ($100M Offers), marketingskills, hormozi-skills, positioning frameworks,
+ * Product Hunt launches, and high-converting SaaS landing pages.
  */
 
 export const MARKETING_TOOLS = [
@@ -29,6 +30,65 @@ export const MARKETING_TOOLS = [
         },
       },
       required: ["product_name", "product_description", "copy_type"],
+    },
+  },
+  {
+    name: "generate_hormozi_offer_blueprint",
+    description: "Generates an Alex Hormozi Grand Slam Offer Blueprint ($100M Offers framework) multiplying Dream Outcome & Perceived Likelihood while minimizing Time Delay & Effort.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        product_name: {
+          type: "string",
+          description: "Name of product or service",
+        },
+        core_outcome: {
+          type: "string",
+          description: "The ultimate dream outcome desired by the customer",
+        },
+        guarantee_type: {
+          type: "string",
+          description: "Type of risk-reversal guarantee (e.g. '30-Day Money Back', 'Pay Only On Results')",
+        },
+      },
+      required: ["product_name", "core_outcome"],
+    },
+  },
+  {
+    name: "generate_brand_positioning_matrix",
+    description: "Generates brand positioning hooks, category creation framing, and target customer pain-point mapping.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        product_name: {
+          type: "string",
+          description: "Product name",
+        },
+        competitor_category: {
+          type: "string",
+          description: "Existing category or competitor status quo (e.g. 'Traditional Web Agencies', 'Slow AI Wrappers')",
+        },
+      },
+      required: ["product_name", "competitor_category"],
+    },
+  },
+  {
+    name: "generate_ad_copy_blueprint",
+    description: "Generates high-CTR Meta, Google, and Twitter ad copy variations (Hook -> Problem -> Solution -> CTA).",
+    inputSchema: {
+      type: "object",
+      properties: {
+        platform: {
+          type: "string",
+          enum: ["meta_facebook", "google_search", "twitter_x", "linkedin_b2b"],
+          description: "Ad platform target",
+        },
+        offer_summary: {
+          type: "string",
+          description: "Summary of the offer or product being advertised",
+        },
+      },
+      required: ["platform", "offer_summary"],
     },
   },
   {
@@ -83,29 +143,71 @@ export const handleMarketingTool = (name, args) => {
     return { content: [{ type: "text", text: copy }] };
   }
 
+  if (name === "generate_hormozi_offer_blueprint") {
+    const pName = args.product_name;
+    const outcome = args.core_outcome;
+    const guarantee = args.guarantee_type || "Risk-Free Guarantee";
+
+    let offer = `# 💎 Alex Hormozi Grand Slam Offer Blueprint ($100M Offers)\n\n`;
+    offer += `> **Product:** \`${pName}\`\n\n`;
+    offer += `### The Value Equation Formula:\n`;
+    offer += `\`\`\`text
+                 Dream Outcome  ×  Perceived Likelihood of Achievement
+Value  =  ─────────────────────────────────────────────────────────────────
+                     Time Delay  ×  Effort & Sacrifice
+\`\`\`\n\n`;
+
+    offer += `### 1. The Grand Slam Offer Package\n`;
+    offer += `- **Dream Outcome:** \`${outcome}\`\n`;
+    offer += `- **Perceived Likelihood:** Automated, battle-tested system that removes human error.\n`;
+    offer += `- **Time Delay Reduction:** Near-instant execution (5-second installation, zero friction).\n`;
+    offer += `- **Effort & Sacrifice Minimization:** 100% done-for-you automation (no learning curve).\n\n`;
+
+    offer += `### 2. Risk-Reversal & Guarantee\n`;
+    offer += `- **Guarantee:** \`${guarantee}\` — *"If you don't get 10x velocity improvement, you pay nothing."*\n\n`;
+
+    offer += `### 3. Urgency & Scarcity Framing\n`;
+    offer += `- **Scarcity:** Limited onboarding slots per week to ensure dedicated support.\n`;
+    offer += `- **Urgency:** Fast-action bonus included for early adopters.\n`;
+
+    return { content: [{ type: "text", text: offer }] };
+  }
+
+  if (name === "generate_brand_positioning_matrix") {
+    const pName = args.product_name;
+    const comp = args.competitor_category;
+
+    let matrix = `# 🎯 Brand Positioning & Messaging Matrix\n\n`;
+    matrix += `### 1. Category Creation & Framing\n`;
+    matrix += `- **Status Quo (${comp}):** Slow, manual, prone to bugs, complex configuration.\n`;
+    matrix += `- **The New Way (${pName}):** Autonomous, zero-config, production-ready, self-updating.\n\n`;
+
+    matrix += `### 2. One-Sentence Positioning Hook\n`;
+    matrix += `> *"Unlike ${comp}, **${pName}** provides automated end-to-end intelligence so you can build, design, and deploy production apps in minutes instead of weeks."*\n`;
+
+    return { content: [{ type: "text", text: matrix }] };
+  }
+
+  if (name === "generate_ad_copy_blueprint") {
+    const plat = args.platform;
+    const offer = args.offer_summary;
+
+    let ad = `# 📢 High-CTR Ad Copy Blueprint (${plat.toUpperCase()})\n\n`;
+    ad += `### Campaign Angle: Direct Response (Hook -> Problem -> Solution -> CTA)\n\n`;
+    ad += `**Hook:** *"Still spending hours manually configuring ${offer}?"*\n\n`;
+    ad += `**Body Copy:**\n`;
+    ad += `Stop wasting dev time on repetitive setups. With **${offer}**, get production-ready code, security hardening, and design systems generated automatically in seconds.\n\n`;
+    ad += `**Call To Action (CTA):** \`Try It Free Today →\`\n`;
+
+    return { content: [{ type: "text", text: ad }] };
+  }
+
   if (name === "generate_ai_image_prompt_blueprint") {
     const assetType = args.asset_type;
-    const style = args.visual_style || "Dark OLED Glassmorphism";
-
     let promptReport = `# 🎨 AI Visual Asset Prompt Blueprint: ${assetType.toUpperCase()}\n\n`;
-
-    if (assetType === "hero_background_glow") {
-      promptReport += `### Midjourney / DALL-E Prompt:\n`;
-      promptReport += `\`\`\`text
-Abstract futuristic ambient glow background, deep midnight blue and obsidian dark surface, subtle violet and emerald neon gradient light rays, sleek glassmorphic blur, 8k resolution, cinematic lighting, ultra-clean UI background, --ar 16:9 --v 6.0
+    promptReport += `\`\`\`text
+Abstract futuristic ambient glow background, deep midnight blue and obsidian dark surface, sleek glassmorphism blur, 8k resolution, cinematic lighting --ar 16:9 --v 6.0
 \`\`\`\n`;
-    } else if (assetType === "glassmorphism_icon") {
-      promptReport += `### Midjourney / DALL-E Prompt:\n`;
-      promptReport += `\`\`\`text
-3D glassmorphic app icon floating in dark space, frosted glass texture with neon purple edge lighting, translucent refraction, minimal luxury design, octanerender, 8k --ar 1:1
-\`\`\`\n`;
-    } else {
-      promptReport += `### Midjourney / DALL-E Prompt:\n`;
-      promptReport += `\`\`\`text
-High-end 3D laptop mockup showing sleek dark mode code editor UI dashboard, ambient purple ambient glow background, photorealistic 8k studio render --ar 16:9
-\`\`\`\n`;
-    }
-
     return { content: [{ type: "text", text: promptReport }] };
   }
 
