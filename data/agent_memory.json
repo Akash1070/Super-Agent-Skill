@@ -40,6 +40,54 @@
       "url": "https://github.com/grafana/pyroscope",
       "category": "24h_cron_scout",
       "timestamp": "2026-08-26T08:23:14.069Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [MetaMask/metamask-mobile] (3013★): Mobile web browser providing access to websites that use the Ethereum blockchain",
+      "url": "https://github.com/MetaMask/metamask-mobile",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:29:25.999Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [measure-sh/measure] (1374★): Measure helps mobile teams monitor and fix crashes, ANRs, bugs, and performance issues. The open source alternative to Firebase Crashlytics.",
+      "url": "https://github.com/measure-sh/measure",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:29:26.000Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [makecindy/cindy] (2307★): Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "url": "https://github.com/makecindy/cindy",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:29:26.000Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [react/react-native] (126412★): A framework for building native applications using React",
+      "url": "https://github.com/react/react-native",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:29:26.000Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [cloudscape-design/components] (2635★): React components for Cloudscape Design System",
+      "url": "https://github.com/cloudscape-design/components",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:34:03.651Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [lobehub/lobe-ui] (2158★): 🍭  Lobe UI - an open-source UI component library for building AIGC web apps",
+      "url": "https://github.com/lobehub/lobe-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:34:03.653Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [mui/base-ui] (10718★): Unstyled UI components for building accessible web apps and design systems. From the creators of Radix, Floating UI, and Material UI.",
+      "url": "https://github.com/mui/base-ui",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:34:03.653Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [carbon-design-system/carbon] (9385★): A design system built by IBM",
+      "url": "https://github.com/carbon-design-system/carbon",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:34:03.653Z"
     }
   ]
 }

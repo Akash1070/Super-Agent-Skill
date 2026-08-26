@@ -7,16 +7,44 @@
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple.svg?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Tools Count](https://img.shields.io/badge/Tools-28%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-28-tool-suite-across-12-modules)
-[![Auto Scout](https://img.shields.io/badge/Auto--Scout-24h%20Cron-cyan.svg?style=for-the-badge)](#-24-hour-autonomous-live-scouting)
+[![Tools Count](https://img.shields.io/badge/Tools-29%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-29-tool-suite-across-12-modules)
+[![Dashboard](https://img.shields.io/badge/Dashboard-localhost:3333-green.svg?style=for-the-badge)](#-web-visual-memory-dashboard)
 
 ---
 
 **Equips AI Assistants (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity, VS Code / Cline) with End-to-End Production Capabilities.**
 
-[⚡ Quick 1-Click Setup](#-1-click-setup-for-any-ai-agent--ide) • [🗺️ 5-Phase Roadmap](#️-the-5-phase-production-roadmap) • [📦 Tool Matrix](#-the-28-tool-suite-across-12-modules) • [👤 Author](#-author--creator)
+[⚡ Quick 1-Click Setup](#-1-click-setup-for-any-ai-agent--ide) • [📊 Web Dashboard](#-web-visual-memory-dashboard) • [🗺️ 5-Phase Roadmap](#️-the-5-phase-production-roadmap) • [📦 Tool Matrix](#-the-29-tool-suite-across-12-modules) • [👤 Author](#-author--creator)
 
 </div>
+
+---
+
+## 📊 Web Visual Memory Dashboard
+
+Open `http://localhost:3333` in your browser to inspect your AI agent's brain in real-time!
+
+```bash
+npm run dashboard
+```
+
+- 🔮 **Live Memory Cards:** View learned user preferences and mistake autopsies.
+- 🔍 **Real-Time GitHub Scouting Feed:** View daily scouted open-source repositories.
+- 🎨 **Visual Dark OLED UI:** Built with clean Glassmorphism styling.
+
+---
+
+## 💻 Global Terminal CLI Engine
+
+Run scouting scans or inspect agent memory directly from your terminal outside the IDE:
+
+```bash
+# Run a live GitHub scout scan for any technology
+npx super-agent-skill scout "nextjs 15 auth"
+
+# Inspect agent memory rules
+npx super-agent-skill memory
+```
 
 ---
 
@@ -67,15 +95,13 @@ Standard AI coding assistants suffer from **3 major bottlenecks**:
 
 ## 🗺️ The 5-Phase Production Roadmap
 
-Your AI Coding Agent uses this MCP skill step-by-step to guide your projects from initial idea to live deployment:
-
 ```
 💡 PHASE 1              🎨 PHASE 2              💻 PHASE 3              🛡️ PHASE 4              🏁 PHASE 5
 Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security & Vitals      DevOps & Deploy
 ┌────────────────┐     ┌────────────────┐     ┌────────────────┐     ┌────────────────┐     ┌────────────────┐
 │ • Backend Stack│────►│ • Design System│────►│ • Karpathy Rule│────►│ • OWASP Audit  │────►│ • Multi-Stage  │
 │ • Better-Auth  │     │ • Mobile Apps  │     │ • Code Compreh.│     │ • Web Vitals   │     │   Docker       │
-│ • Zod Schemas  │     │ • Hero Bluepr. │     │ • CoT Prompting│     │ • Playwright   │     │ • CI/CD Github │
+│ • Zod Schemas  │     │ • Hero Bluepr. │     │ • CoT Prompting│     │ • Playwright   │     │ • Auto PR Fixer│
 └────────────────┘     └────────────────┘     └────────────────┘     └────────────────┘     └────────────────┘
 ```
 
@@ -112,45 +138,9 @@ Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security &
 - `get_deployment_checklist`: Step-by-step production checklists for Vercel, VPS, Coolify, AWS.
 - `diagnose_deployment_issue`: OOM killer, CORS overage, and build failure diagnostics.
 - `generate_github_actions_workflow`: GitHub Actions CI/CD workflows for automated testing and deployment.
+- `generate_autonomous_pr_fixer`: Automated GitHub Action to fix reported issue bugs via Pull Requests.
 
 </details>
-
----
-
-## 🌐 24-Hour Autonomous Live Scouting
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 🤖 GitHub Actions (Daily 00:00 UTC Cron)                                   │
-└──────────────────────────────────────┬──────────────────────────────────────┘
-                                       │ Auto-Scouts GitHub & Commits
-                                       ▼
-┌──────────────────────────────────┐        ┌──────────────────────────────────┐
-│ 🚀 Local 24h Background Cron     │───────►│ data/agent_memory.json           │
-│ (Runs silently every 24 hours)   │        │ • Live Discovered Intelligence   │
-└──────────────────────────────────┘        └──────────────────────────────────┘
-```
-
-Automatically tracks trending open-source projects across **Mobile Apps (React Native/Flutter)**, **Web Boilerplates**, **UI Design Systems**, **DevOps**, and **Databases**, updating your local agent memory continuously!
-
----
-
-## 📦 The 28-Tool Suite Across 12 Modules
-
-| Module | Purpose | Tools Provided |
-| :--- | :--- | :--- |
-| **1. Live GitHub Scout** | Real-time GitHub search & auto-updater | `scout_and_update_skill_library`, `get_latest_trending_repos` |
-| **2. Memory & Learning** | Persistent user habit & mistake autopsy storage | `log_user_preference`, `log_mistake_autopsy`, `get_agent_memory` |
-| **3. Auth & Architecture** | Modern auth & backend stack recommendations | `get_auth_architecture_blueprint`, `get_backend_stack_recommendation` |
-| **4. Prompt Intelligence** | Code comprehension & system prompt optimization | `get_code_comprehension_strategy`, `optimize_agent_prompt` |
-| **5. UI/UX & Mobile Design** | Design system generator & mobile layout blueprints | `get_design_system_recommendation`, `get_ui_component_blueprint`, `get_mobile_app_blueprint`, `audit_ui_design_aesthetic` |
-| **6. DevOps & Deploy** | Multi-stage Docker generator & failure diagnosis | `generate_docker_setup`, `get_deployment_checklist`, `diagnose_deployment_issue` |
-| **7. Code Security** | OWASP security auditor & code hardening | `audit_security_vulnerabilities`, `generate_security_hardening` |
-| **8. Karpathy Guidelines** | Surgical scope & goal verification guidelines | `get_karpathy_rules`, `evaluate_coding_plan`, `generate_verification_checklist` |
-| **9. Performance & Vitals** | Web Vitals audit & Redis caching strategies | `audit_performance_bottlenecks`, `generate_caching_strategy` |
-| **10. Testing & QA** | Playwright / Vitest / PyTest test suite generator | `generate_test_suite_blueprint` |
-| **11. API Contracts** | Zod schema & TypeScript type contract generator | `generate_typesafe_api_contract` |
-| **12. GitHub CI/CD** | Production GitHub Actions workflow generator | `generate_github_actions_workflow` |
 
 ---
 
