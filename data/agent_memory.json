@@ -82,6 +82,30 @@
       "url": "https://github.com/RunanywhereAI/runanywhere-sdks",
       "category": "24h_production_scout",
       "timestamp": "2026-08-26T08:57:55.200Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [zitadel/zitadel] (14858★): ZITADEL - Identity infrastructure, simplified for you.",
+      "url": "https://github.com/zitadel/zitadel",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:58:50.532Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [logto-io/logto] (14464★): 🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "url": "https://github.com/logto-io/logto",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:58:50.537Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [sebadob/rauthy] (1290★): Single Sign-On Identity & Access Management via OpenID Connect, OAuth 2, PAM",
+      "url": "https://github.com/sebadob/rauthy",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:58:50.537Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [FreeRADIUS/freeradius-server] (2574★): FreeRADIUS - A multi-protocol policy server.",
+      "url": "https://github.com/FreeRADIUS/freeradius-server",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T08:58:50.537Z"
     }
   ]
 }

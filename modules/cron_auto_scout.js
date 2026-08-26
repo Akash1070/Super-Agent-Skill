@@ -1,7 +1,7 @@
 /**
  * 24-Hour Autonomous Background Scout Cron Engine
  * Runs non-blockingly on server bootup and every 24 hours thereafter to fetch trending repos
- * across Web, Mobile Apps (React Native, Expo, Flutter, iOS/Android), SaaS, AI Agents, UI/UX, Databases, Auth, DevOps, and Performance.
+ * across Web, Mobile Apps (React Native, Expo, Flutter, iOS/Android), SaaS, AI Agents, UI/UX, Databases, Auth, DevOps, Performance, SEO/AEO/GEO, Monetization & Copywriting.
  */
 
 import fs from "fs";
@@ -34,7 +34,7 @@ function saveMemory(data) {
 }
 
 export async function runAutonomousScout() {
-  console.error("🔄 [24h Auto-Scout Cron] Querying GitHub live index for Mobile, Web & Production app building blocks...");
+  console.error("🔄 [24h Auto-Scout Cron] Querying GitHub live index for Mobile, Web, SEO/AEO/GEO & SaaS building blocks...");
   
   const productionCategories = [
     "topic:react-native stars:>1000",
@@ -47,7 +47,13 @@ export async function runAutonomousScout() {
     "topic:devops stars:>1500",
     "topic:database-orm stars:>1500",
     "topic:authentication stars:>1000",
-    "topic:web-vitals stars:>500"
+    "topic:web-vitals stars:>500",
+    "topic:generative-engine-optimization stars:>50",
+    "topic:answer-engine-optimization stars:>50",
+    "topic:seo-audits stars:>100",
+    "topic:copywriting-prompts stars:>100",
+    "topic:monetization-pricing stars:>50",
+    "topic:product-analytics stars:>500"
   ];
 
   const selectedQuery = productionCategories[Math.floor(Math.random() * productionCategories.length)];
@@ -79,9 +85,9 @@ export async function runAutonomousScout() {
 
       if (addedCount > 0) {
         saveMemory(memory);
-        console.error(`✅ [24h Auto-Scout Cron] Added ${addedCount} new mobile/web production tool rules to agent_memory.json!`);
+        console.error(`✅ [24h Auto-Scout Cron] Added ${addedCount} new mobile/web/SEO production tool rules to agent_memory.json!`);
       } else {
-        console.error("ℹ️ [24h Auto-Scout Cron] Agent memory is up-to-date with latest scouted mobile/web tools.");
+        console.error("ℹ️ [24h Auto-Scout Cron] Agent memory is up-to-date with latest scouted tools.");
       }
     }
   } catch (err) {
