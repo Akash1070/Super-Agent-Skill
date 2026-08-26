@@ -19,6 +19,7 @@ import { TESTING_TOOLS, handleTestingTool } from "./modules/testing.js";
 import { API_CONTRACTS_TOOLS, handleApiContractsTool } from "./modules/api_contracts.js";
 import { CICD_TOOLS, handleCicdTool } from "./modules/cicd_automation.js";
 import { AUTO_SCOUT_TOOLS, handleAutoScoutTool } from "./modules/auto_scout_updater.js";
+import { initAutonomousScoutCron } from "./modules/cron_auto_scout.js";
 
 const ALL_TOOLS = [
   ...UI_UX_TOOLS,
@@ -38,7 +39,7 @@ const ALL_TOOLS = [
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "3.5.0",
+    version: "4.0.0",
   },
   {
     capabilities: {
@@ -82,10 +83,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skills MCP Server v3.5 Live Scout Edition running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v4.0 (24h Autonomous Cron Engine) running on stdio");
+
+  // Start 24-hour background cron scouting loop
+  initAutonomousScoutCron();
 }
 
 run().catch((error) => {
-  console.error("Fatal error running Super Agent Skills MCP server:", error);
+  console.error("Fatal error running Super Agent Skill MCP server:", error);
   process.exit(1);
 });

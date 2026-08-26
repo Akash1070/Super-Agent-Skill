@@ -22,6 +22,24 @@
       "rule": "Always query live GitHub scouting before introducing new dependencies or building complex UI/Auth/DevOps components.",
       "category": "auto_scout",
       "timestamp": "2026-08-26T13:28:00Z"
+    },
+    {
+      "rule": "Auto-Scouted [kestra-io/kestra] (27922★): Event Driven Orchestration & Scheduling Platform for Mission Critical Applications",
+      "url": "https://github.com/kestra-io/kestra",
+      "category": "24h_cron_scout",
+      "timestamp": "2026-08-26T08:23:14.068Z"
+    },
+    {
+      "rule": "Auto-Scouted [superplanehq/superplane] (5526★): The open source control plane for agentic engineering.",
+      "url": "https://github.com/superplanehq/superplane",
+      "category": "24h_cron_scout",
+      "timestamp": "2026-08-26T08:23:14.069Z"
+    },
+    {
+      "rule": "Auto-Scouted [grafana/pyroscope] (11640★): Continuous Profiling Platform. Debug performance issues down to a single line of code",
+      "url": "https://github.com/grafana/pyroscope",
+      "category": "24h_cron_scout",
+      "timestamp": "2026-08-26T08:23:14.069Z"
     }
   ]
 }
