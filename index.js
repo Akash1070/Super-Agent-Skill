@@ -33,6 +33,7 @@ import { AI_MEDIA_TOOLS, handleAiMediaTool } from "./modules/ai_media_engine.js"
 import { WEB_DOMAIN_TOOLS, handleWebDomainTool } from "./modules/web_domain_engine.js";
 import { FINTECH_TOOLS, handleFintechTool } from "./modules/fintech_crypto.js";
 import { STAGE_ADVISOR_TOOLS, handleStageAdvisorTool } from "./modules/developer_stage_advisor.js";
+import { FEDERATED_MEMORY_TOOLS, handleFederatedMemoryTool } from "./modules/federated_memory_sync.js";
 import { initAutonomousScoutCron } from "./modules/cron_auto_scout.js";
 
 const ALL_TOOLS = [
@@ -62,12 +63,13 @@ const ALL_TOOLS = [
   ...WEB_DOMAIN_TOOLS,
   ...FINTECH_TOOLS,
   ...STAGE_ADVISOR_TOOLS,
+  ...FEDERATED_MEMORY_TOOLS,
 ];
 
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "13.0.0",
+    version: "14.0.0",
   },
   {
     capabilities: {
@@ -86,6 +88,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   try {
+    if (FEDERATED_MEMORY_TOOLS.some((t) => t.name === name)) return handleFederatedMemoryTool(name, args);
     if (STAGE_ADVISOR_TOOLS.some((t) => t.name === name)) return handleStageAdvisorTool(name, args);
     if (AI_MEDIA_TOOLS.some((t) => t.name === name)) return handleAiMediaTool(name, args);
     if (WEB_DOMAIN_TOOLS.some((t) => t.name === name)) return handleWebDomainTool(name, args);
@@ -125,7 +128,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v13.0 (57 Tools / 26 Modules) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v14.0 (59 Tools / 27 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();
