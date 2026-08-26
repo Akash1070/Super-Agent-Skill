@@ -22,6 +22,9 @@ import { AUTO_SCOUT_TOOLS, handleAutoScoutTool } from "./modules/auto_scout_upda
 import { REFACTOR_TOOLS, handleRefactorTool } from "./modules/code_refactor.js";
 import { SEO_TOOLS, handleSeoTool } from "./modules/seo_marketing.js";
 import { MARKETING_TOOLS, handleMarketingTool } from "./modules/marketing_copywriting.js";
+import { MONETIZATION_TOOLS, handleMonetizationTool } from "./modules/monetization_pricing.js";
+import { LEGAL_TOOLS, handleLegalTool } from "./modules/legal_compliance.js";
+import { ANALYTICS_TOOLS, handleAnalyticsTool } from "./modules/analytics_growth.js";
 import { initAutonomousScoutCron } from "./modules/cron_auto_scout.js";
 
 const ALL_TOOLS = [
@@ -40,12 +43,15 @@ const ALL_TOOLS = [
   ...REFACTOR_TOOLS,
   ...SEO_TOOLS,
   ...MARKETING_TOOLS,
+  ...MONETIZATION_TOOLS,
+  ...LEGAL_TOOLS,
+  ...ANALYTICS_TOOLS,
 ];
 
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "6.0.0",
+    version: "7.0.0",
   },
   {
     capabilities: {
@@ -64,6 +70,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   try {
+    if (MONETIZATION_TOOLS.some((t) => t.name === name)) return handleMonetizationTool(name, args);
+    if (LEGAL_TOOLS.some((t) => t.name === name)) return handleLegalTool(name, args);
+    if (ANALYTICS_TOOLS.some((t) => t.name === name)) return handleAnalyticsTool(name, args);
     if (MARKETING_TOOLS.some((t) => t.name === name)) return handleMarketingTool(name, args);
     if (REFACTOR_TOOLS.some((t) => t.name === name)) return handleRefactorTool(name, args);
     if (SEO_TOOLS.some((t) => t.name === name)) return handleSeoTool(name, args);
@@ -92,7 +101,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v6.0 (39 Tools / 15 Modules) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v7.0 (43 Tools / 18 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();
