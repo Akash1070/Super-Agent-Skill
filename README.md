@@ -62,7 +62,7 @@ Standard AI coding agents often suffer from 4 major limitations:
 
 ### Step 1: Clone & Install Dependencies
 ```bash
-git clone https://github.com/AkashKumarJha/super-agent-skills-mcp.git
+git clone https://github.com/Akash1070/Super-Agent-Skill.git
 cd super-agent-skills-mcp
 npm install
 ```
