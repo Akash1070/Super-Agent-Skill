@@ -19,6 +19,8 @@ import { TESTING_TOOLS, handleTestingTool } from "./modules/testing.js";
 import { API_CONTRACTS_TOOLS, handleApiContractsTool } from "./modules/api_contracts.js";
 import { CICD_TOOLS, handleCicdTool } from "./modules/cicd_automation.js";
 import { AUTO_SCOUT_TOOLS, handleAutoScoutTool } from "./modules/auto_scout_updater.js";
+import { REFACTOR_TOOLS, handleRefactorTool } from "./modules/code_refactor.js";
+import { SEO_TOOLS, handleSeoTool } from "./modules/seo_marketing.js";
 import { initAutonomousScoutCron } from "./modules/cron_auto_scout.js";
 
 const ALL_TOOLS = [
@@ -34,12 +36,14 @@ const ALL_TOOLS = [
   ...API_CONTRACTS_TOOLS,
   ...CICD_TOOLS,
   ...AUTO_SCOUT_TOOLS,
+  ...REFACTOR_TOOLS,
+  ...SEO_TOOLS,
 ];
 
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "4.0.0",
+    version: "5.0.0",
   },
   {
     capabilities: {
@@ -58,6 +62,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   try {
+    if (REFACTOR_TOOLS.some((t) => t.name === name)) return handleRefactorTool(name, args);
+    if (SEO_TOOLS.some((t) => t.name === name)) return handleSeoTool(name, args);
     if (AUTO_SCOUT_TOOLS.some((t) => t.name === name)) return await handleAutoScoutTool(name, args);
     if (PERFORMANCE_TOOLS.some((t) => t.name === name)) return handlePerformanceTool(name, args);
     if (TESTING_TOOLS.some((t) => t.name === name)) return handleTestingTool(name, args);
@@ -83,7 +89,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v4.0 (24h Autonomous Cron Engine) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v5.0 (33 Tools / 14 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();

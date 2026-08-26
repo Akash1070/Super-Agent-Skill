@@ -7,14 +7,14 @@
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple.svg?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Tools Count](https://img.shields.io/badge/Tools-30%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-30-tool-suite-across-12-modules)
+[![Tools Count](https://img.shields.io/badge/Tools-33%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-33-tool-suite-across-14-modules)
 [![In-IDE Dashboard](https://img.shields.io/badge/In--IDE-Dashboard-brightgreen.svg?style=for-the-badge)](#-in-ide-visual-intelligence-dashboard)
 
 ---
 
 **Equips AI Assistants (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity, VS Code / Cline) with End-to-End Production Capabilities.**
 
-[⚡ Quick 1-Click Setup](#-1-click-setup-for-any-ai-agent--ide) • [🖥️ In-IDE Dashboard](#-in-ide-visual-intelligence-dashboard) • [🗺️ 5-Phase Roadmap](#️-the-5-phase-production-roadmap) • [📦 Tool Matrix](#-the-30-tool-suite-across-12-modules) • [👤 Author](#-author--creator)
+[⚡ Quick 1-Click Setup](#-1-click-setup-for-any-ai-agent--ide) • [🖥️ In-IDE Dashboard](#-in-ide-visual-intelligence-dashboard) • [🗺️ 5-Phase Roadmap](#️-the-5-phase-production-roadmap) • [📦 Tool Matrix](#-the-33-tool-suite-across-14-modules) • [👤 Author](#-author--creator)
 
 </div>
 
@@ -83,7 +83,7 @@ Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security &
 ┌────────────────┐     ┌────────────────┐     ┌────────────────┐     ┌────────────────┐     ┌────────────────┐
 │ • Backend Stack│────►│ • Design System│────►│ • Karpathy Rule│────►│ • OWASP Audit  │────►│ • Multi-Stage  │
 │ • Better-Auth  │     │ • Mobile Apps  │     │ • Code Compreh.│     │ • Web Vitals   │     │   Docker       │
-│ • Zod Schemas  │     │ • Hero Bluepr. │     │ • CoT Prompting│     │ • Playwright   │     │ • Auto PR Fixer│
+│ • Zod Schemas  │     │ • Hero Bluepr. │     │ • Refactor ESM │     │ • Playwright   │     │ • Auto PR Fixer│
 └────────────────┘     └────────────────┘     └────────────────┘     └────────────────┘     └────────────────┘
 ```
 
@@ -96,13 +96,16 @@ Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security &
 - `generate_typesafe_api_contract`: Zod schemas & TypeScript type contracts.
 - `scout_and_update_skill_library`: Live GitHub scouting for state-of-the-art open-source libraries.
 
-### 🎨 Phase 2: Web & Mobile Design (UI/UX)
+### 🎨 Phase 2: Web & Mobile Design (UI/UX) & SEO
 - `get_design_system_recommendation`: Tailored palettes (HEX/HSL), Google Fonts, Glassmorphism/OLED Dark styles.
 - `get_ui_component_blueprint`: Landing Page Heroes, Cmd+K Palettes, Data Tables, Stat Cards.
 - `get_mobile_app_blueprint`: React Native (Expo) and Flutter mobile screen layouts.
 - `audit_ui_design_aesthetic`: Audits code against generic colors and static anti-patterns.
+- `generate_seo_metadata_blueprint`: Generates OpenGraph social preview tags, Twitter Cards, and JSON-LD schema.
 
-### 💻 Phase 3: Development & Code Quality
+### 💻 Phase 3: Development, Quality & Refactoring
+- `modernize_legacy_code`: Upgrades CommonJS to ESM, Class components to Hooks, var to const/let.
+- `detect_dead_code_and_bloat`: Scans for leftover console.log, un-tree-shakable imports, and dead code.
 - `get_karpathy_rules`: Enforces "Think Before Coding," "Simplicity First," and "Surgical Scope."
 - `evaluate_coding_plan`: Validates implementation plans against over-engineering risks.
 - `get_code_comprehension_strategy`: Maps complex codebases cleanly without hallucinations.
@@ -126,7 +129,7 @@ Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security &
 
 ---
 
-## 📦 The 30-Tool Suite Across 12 Modules
+## 📦 The 33-Tool Suite Across 14 Modules
 
 | Module | Purpose | Tools Provided |
 | :--- | :--- | :--- |
@@ -142,6 +145,8 @@ Ideation & Auth        Web & Mobile Design    Dev & Code Quality      Security &
 | **10. Testing & QA** | Playwright / Vitest / PyTest test suite generator | `generate_test_suite_blueprint` |
 | **11. API Contracts** | Zod schema & TypeScript type contract generator | `generate_typesafe_api_contract` |
 | **12. GitHub CI/CD** | Production GitHub Actions workflow generator | `generate_github_actions_workflow`, `generate_autonomous_pr_fixer` |
+| **13. Code Refactoring** | Code modernization & dead code bloat detection | `modernize_legacy_code`, `detect_dead_code_and_bloat` |
+| **14. SEO & OpenGraph** | Social meta tags & JSON-LD schema generator | `generate_seo_metadata_blueprint` |
 
 ---
 
