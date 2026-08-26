@@ -1,0 +1,27 @@
+{
+  "user_preferences": [
+    {
+      "category": "design",
+      "preference": "Prefers HSL colors, modern dark OLED/glassmorphism aesthetics, Google Fonts (Inter, Outfit, Plus Jakarta Sans), smooth micro-animations, and clean layout blueprints.",
+      "timestamp": "2026-08-26T13:00:00Z"
+    },
+    {
+      "category": "code_quality",
+      "preference": "Demands production-level, well-written, clean codebase architecture with zero over-engineering and strict surgical changes.",
+      "timestamp": "2026-08-26T13:04:00Z"
+    },
+    {
+      "category": "workflow",
+      "preference": "ALWAYS run real-time GitHub repo scouting via repo-scout / auto-scout tools when building new features to discover newly trending state-of-the-art libraries, design patterns, and tools automatically.",
+      "timestamp": "2026-08-26T13:28:00Z"
+    }
+  ],
+  "mistakes_autopsy": [],
+  "project_rules": [
+    {
+      "rule": "Always query live GitHub scouting before introducing new dependencies or building complex UI/Auth/DevOps components.",
+      "category": "auto_scout",
+      "timestamp": "2026-08-26T13:28:00Z"
+    }
+  ]
+}
