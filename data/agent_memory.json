@@ -106,6 +106,30 @@
       "url": "https://github.com/FreeRADIUS/freeradius-server",
       "category": "24h_production_scout",
       "timestamp": "2026-08-26T08:58:50.537Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [nuxt/fonts] (599★): Plug-and-play web font optimization and configuration for Nuxt apps.",
+      "url": "https://github.com/nuxt/fonts",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:03:32.464Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [unjs/fontaine] (1983★): Automatic font fallback based on font metrics",
+      "url": "https://github.com/unjs/fontaine",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:03:32.465Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [openreplay/openreplay] (12576★): Session replay, cobrowsing and product analytics you can self-host. Best for reproducing issues and iterating on your product.",
+      "url": "https://github.com/openreplay/openreplay",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:03:32.465Z"
+    },
+    {
+      "rule": "Auto-Scouted Production Tool [basics/nuxt-booster] (865★): nuxt-booster will help you to improve the lighthouse performance score (100/100) of your website. 🚀",
+      "url": "https://github.com/basics/nuxt-booster",
+      "category": "24h_production_scout",
+      "timestamp": "2026-08-26T09:03:32.465Z"
     }
   ]
 }

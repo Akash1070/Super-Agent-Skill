@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚀 SUPER AGENT SKILL v10.0
+# 🚀 SUPER AGENT SKILL v11.0
 ### *The Zero-BS, Full-Stack AI Coding & Growth Engine for Builders & Founders*
 
 [![Author: Akash Kumar Jha](https://img.shields.io/badge/Author-Akash%20Kumar%20Jha-blueviolet.svg?style=for-the-badge)](https://github.com/Akash1070)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 [![MCP Standard](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple.svg?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Tools Count](https://img.shields.io/badge/Tools-48%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-48-tool-suite-across-19-modules)
+[![Tools Count](https://img.shields.io/badge/Tools-52%20Active%20Tools-orange.svg?style=for-the-badge)](#-the-52-tool-suite-across-22-modules)
 [![In-IDE Dashboard](https://img.shields.io/badge/In--IDE-Dashboard-brightgreen.svg?style=for-the-badge)](#-in-ide-visual-intelligence-dashboard)
 
 ---
@@ -14,9 +14,9 @@
 ### 👴 **LISTEN UP, BUILDER: HERE'S THE REAL DEAL**
 *I've seen developers waste thousands of hours reinventing the wheel—messing with unstyled UIs, fixing CORS headers at 2 AM, and writing weak headlines nobody reads.*
 
-**`super-agent-skill` gives your AI agent (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity) 48 battle-tested tools to do the heavy lifting for you—100% Free, Zero Friction, Installed in 5 Seconds.**
+**`super-agent-skill` gives your AI agent (Claude Code, Cursor, Windsurf, OpenAI Codex, Antigravity) 52 battle-tested tools to do the heavy lifting for you—100% Free, Zero Friction, Installed in 5 Seconds.**
 
-[⚡ 5-Second Setup](#-5-second-1-click-setup) • [🧠 Gold Memory Loop](#-gold-level-agent-learning-loop-memory) • [🔍 SEO / AEO / GEO Engine](#-seo--aeo--geo-ai-discovery-engine) • [📦 48 Tools Matrix](#-the-48-tool-suite-across-19-modules) • [👤 Author](#-author--creator)
+[⚡ 5-Second Setup](#-5-second-1-click-setup) • [🧠 Gold Memory Loop](#-gold-level-agent-learning-loop-memory) • [🔍 SEO / AEO / GEO Engine](#-seo--aeo--geo-ai-discovery-engine) • [📦 52 Tools Matrix](#-the-52-tool-suite-across-22-modules) • [👤 Author](#-author--creator)
 
 </div>
 
@@ -86,7 +86,7 @@ No complex build steps. Paste this into your IDE's `mcp_config.json` and you're 
 
 ---
 
-## 📦 The 48-Tool Suite Across 19 Modules
+## 📦 The 52-Tool Suite Across 22 Modules
 
 | Module | Purpose | Tools Provided |
 | :--- | :--- | :--- |
@@ -109,6 +109,9 @@ No complex build steps. Paste this into your IDE's `mcp_config.json` and you're 
 | **17. Legal & Compliance** | GDPR/CCPA Privacy Policy & Terms of Service | `generate_privacy_terms_blueprint` |
 | **18. Product Analytics** | Event telemetry tracking & funnel optimization | `generate_telemetry_funnel_blueprint` |
 | **19. SEO + AEO + GEO** | Search, Perplexity AEO & LLM GEO `llms.txt` discovery | `generate_seo_aeo_geo_blueprint`, `generate_llms_txt_blueprint`, `audit_seo_aeo_geo_readiness`, `generate_backlink_and_traffic_strategy` |
+| **20. RAG & Vector DBs** | ChromaDB / Qdrant RAG & document parsing pipelines | `generate_rag_vector_blueprint`, `generate_document_processing_pipeline` |
+| **21. Stealth Web Scraping** | Playwright headless browser automation & stealth scraping | `generate_web_scraping_blueprint` |
+| **22. Data Visualization** | Recharts / Chart.js / Tremor analytics dashboard components | `generate_dataviz_dashboard_blueprint` |
 
 ---
 

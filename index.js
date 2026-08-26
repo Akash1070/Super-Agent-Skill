@@ -26,6 +26,9 @@ import { MONETIZATION_TOOLS, handleMonetizationTool } from "./modules/monetizati
 import { LEGAL_TOOLS, handleLegalTool } from "./modules/legal_compliance.js";
 import { ANALYTICS_TOOLS, handleAnalyticsTool } from "./modules/analytics_growth.js";
 import { SEO_AEO_GEO_TOOLS, handleSeoAeoGeoTool } from "./modules/seo_aeo_geo.js";
+import { RAG_VECTOR_TOOLS, handleRagVectorTool } from "./modules/rag_vector_engine.js";
+import { SCRAPING_TOOLS, handleScrapingTool } from "./modules/scraping_automation.js";
+import { DATAVIZ_TOOLS, handleDataVizTool } from "./modules/data_viz_engine.js";
 import { initAutonomousScoutCron } from "./modules/cron_auto_scout.js";
 
 const ALL_TOOLS = [
@@ -48,12 +51,15 @@ const ALL_TOOLS = [
   ...LEGAL_TOOLS,
   ...ANALYTICS_TOOLS,
   ...SEO_AEO_GEO_TOOLS,
+  ...RAG_VECTOR_TOOLS,
+  ...SCRAPING_TOOLS,
+  ...DATAVIZ_TOOLS,
 ];
 
 const server = new Server(
   {
     name: "super-agent-skills-mcp",
-    version: "10.0.0",
+    version: "11.0.0",
   },
   {
     capabilities: {
@@ -72,6 +78,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   try {
+    if (RAG_VECTOR_TOOLS.some((t) => t.name === name)) return handleRagVectorTool(name, args);
+    if (SCRAPING_TOOLS.some((t) => t.name === name)) return handleScrapingTool(name, args);
+    if (DATAVIZ_TOOLS.some((t) => t.name === name)) return handleDataVizTool(name, args);
     if (MEMORY_TOOLS.some((t) => t.name === name)) return handleMemoryTool(name, args);
     if (SEO_AEO_GEO_TOOLS.some((t) => t.name === name)) return handleSeoAeoGeoTool(name, args);
     if (MONETIZATION_TOOLS.some((t) => t.name === name)) return handleMonetizationTool(name, args);
@@ -104,7 +113,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("🚀 Super Agent Skill MCP Server v10.0 (48 Tools / 19 Modules) running on stdio");
+  console.error("🚀 Super Agent Skill MCP Server v11.0 (52 Tools / 22 Modules) running on stdio");
 
   // Start 24-hour background cron scouting loop
   initAutonomousScoutCron();
